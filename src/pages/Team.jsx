@@ -55,7 +55,16 @@ const Team = () => {
       </p>
     </div>
   </div>
-
+  const Team = () => {
+  return (
+    <div className="py-20 bg-gray-50">
+  {/* Header */}
+  <div className="text-center mb-16">
+    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Team</h1>
+    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+      A diverse coalition of scientists, engineers, and visionaries working to extend humanity's reach into the solar system.
+    </p>
+  </div>
   {/* Advisory Board Section */}
   <div className="mt-20">
     <h2 className="text-3xl font-bold text-gray-900 text-center mb-10">Advisory Board</h2>
@@ -85,7 +94,16 @@ const Team = () => {
       </div>
     </div>
   </div>
-
+    const Team = () => {
+  return (
+    <div className="py-20 bg-gray-50">
+  {/* Header */}
+  <div className="text-center mb-16">
+    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Team</h1>
+    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+      A diverse coalition of scientists, engineers, and visionaries working to extend humanity's reach into the solar system.
+    </p>
+  </div>
   {/* Corporate Partners Section */}
   <div className="mt-20">
     <h2 className="text-3xl font-bold text-gray-900 text-center mb-10">Corporate Partners</h2>
