@@ -70,12 +70,16 @@ const Team = () => {
           <p className="text-sm text-gray-600 mt-2">[Insert Eric's bio here]</p>
         </div>
 
-        {/* Henry S */}
+        {/* Eric Henry */}
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
-          <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">HS</div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-1">Henry S</h2>
+          <img
+            src="/images/team/eric.jpeg"
+            alt="Eric R"
+            className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
+          />
+          <h2 className="text-xl font-semibold text-gray-900 mb-1">Eric Henry</h2>
           <p className="text-primary-600 font-medium">Advisor</p>
-          <p className="text-sm text-gray-600 mt-2">[Insert Henry's bio here]</p>
+          <p className="text-sm text-gray-600 mt-2">Former SecOps Deputy Director for the U.S. Government GSA, DoD SecOps expert, Head of Security Ops for Salesforce, and AI Blockchain strategist.</p>
         </div>
       </div>
 
