@@ -64,7 +64,7 @@ const Team = () => {
           <h2 className="text-xl font-semibold text-gray-900 mb-1">Dan Schwartz</h2>
           <p className="text-primary-600 font-medium">Advisor</p>
           <p className="text-sm text-gray-600 mt-2">
-            MBA Loyola, CEO P Performance Executive Sales and Fundraising, DPIN Foundation COO, advising on the integration of AI and distributed GPU computing.
+            MBA Loyola College in Maryland, CEO P Performance Executive Sales and Fundraising, DPIN Foundation COO, advising on the integration of AI and distributed GPU computing.
           </p>
         </div>
 
@@ -107,30 +107,52 @@ const Team = () => {
 
       {/* Corporate Partners Section */}
       <div className="grid md:grid-cols-3 gap-10">
-        {/* Partner 1 */}
-        <div className="bg-white rounded-lg shadow-md p-6 text-center">
-          <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">CP</div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-1">Company One</h2>
-          <p className="text-primary-600 font-medium">Technology Partner</p>
-          <p className="text-sm text-gray-600 mt-2">[Insert Company One’s description here]</p>
-        </div>
-
-        {/* Partner 2 */}
-        <div className="bg-white rounded-lg shadow-md p-6 text-center">
-          <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">CP</div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-1">Company Two</h2>
-          <p className="text-primary-600 font-medium">Launch Services</p>
-          <p className="text-sm text-gray-600 mt-2">[Insert Company Two’s description here]</p>
-        </div>
-
-        {/* Partner 3 */}
-        <div className="bg-white rounded-lg shadow-md p-6 text-center">
-          <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">CP</div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-1">Company Three</h2>
-          <p className="text-primary-600 font-medium">Strategic Partner</p>
-          <p className="text-sm text-gray-600 mt-2">[Insert Company Three’s description here]</p>
-        </div>
+      {/* CyberIntel Solutions */}
+      <div className="bg-white rounded-lg shadow-md p-6 text-center">
+        <img
+          src="/images/team/cyberintelsolutions.jpeg" // Update path/filename as needed
+          alt="CyberIntel Solutions"
+          className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
+        />
+        <h2 className="text-xl font-semibold text-gray-900 mb-1">CyberIntel Solutions</h2>
+        <p className="text-primary-600 font-medium">Post Quantum Encryption Partner</p>
+        <p className="text-sm text-gray-600 mt-2">
+          Cyber Intell Solution (CIS) LLC is a cybersecurity firm founded by a former U.S. Special Operations Command (USSOCOM) member. It offers expert consulting, specialized products, and tailored services to government and corporate clients worldwide. CIS is led by professionals with strong ethics and leadership backgrounds in Special Operations and Intelligence.
+        </p>
       </div>
+
+      {/* The Rad Team */}
+      <div className="bg-white rounded-lg shadow-md p-6 text-center">
+        <img
+          src="/images/team/theradteam.jpeg"
+          alt="The Rad Team"
+          className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
+        />
+        <h2 className="text-xl font-semibold text-gray-900 mb-1">The Rad Team</h2>
+        <p className="text-primary-600 font-medium">Radiation Reliability for Space Systems</p>
+        <p className="text-sm text-gray-600 mt-2">
+          The Rad Team is a specialized radiation reliability consultancy delivering mission-optimized engineering solutions. From precise analysis to efficient execution, it helps space missions meet requirements with confidence and speed.
+        </p>
+      </div>
+
+        {/* Seqre */}
+      <div className="bg-white rounded-lg shadow-md p-6 text-center">
+        <img
+          src="/images/team/seqre.jpeg"
+          alt="Seqre"
+          className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
+        />
+        <h2 className="text-xl font-semibold text-gray-900 mb-1">Seqre</h2>
+        <p className="text-primary-600 font-medium">
+          Segmented Interdependent Payloads with Evaporating QR Code Delivery Pods
+        </p>
+        <p className="text-sm text-gray-600 mt-2">
+          SEQRE is a deep-tech U.S. company securing digital communications by embedding confidential messages in encrypted, shareable codes. It protects data, prevents unauthorized access, and streamlines secure communication.
+        </p>
+      </div>
+
+    </div>
+
     </div>
   );
 };
