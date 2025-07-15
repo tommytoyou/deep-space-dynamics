@@ -22,17 +22,17 @@ const Team = () => {
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Tom Erickson</h2>
             <p className="text-primary-600 font-medium">Founder & CEO</p>
             <p className="text-sm text-gray-600 mt-2">
-              20+ years in project management, space entrepreneurship, and public engagement. Visionary behind Deep Space Dynamics.
+              20+ years in public engagement, space entrepreneurship, and project management. Visionary behind Deep Space Dynamics.
             </p>
           </div>
 
           {/* CTO */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
             <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">SC</div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-1">Dr. Sarah Chen</h2>
-            <p className="text-primary-600 font-medium">Chief Technology Officer</p>
+            <h2 className="text-xl font-semibold text-gray-900 mb-1">Michael Garner</h2>
+            <p className="text-primary-600 font-medium">CISO</p>
             <p className="text-sm text-gray-600 mt-2">
-              Former NASA propulsion systems lead. Oversees innovation across CubeSat hardware, autonomy, and mission architecture.
+              A Dynamic Senior IS executive and former Defense Information Systems Agency Cyber Security Analyst with 15+ years experience identifying threats to information asset integrity, availability, and confidentiality.
             </p>
           </div>
 
