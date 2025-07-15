@@ -53,21 +53,31 @@ const Team = () => {
       </div>
 
       {/* Advisory Board Section */}
-      <div className="grid md:grid-cols-3 gap-10">
-        {/* Dan H */}
-        <div className="bg-white rounded-lg shadow-md p-6 text-center">
-          <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">DH</div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-1">Dan H</h2>
+              <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <img
+            src="/images/dan.jpg"
+            alt="Dan Schwartz"
+            className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h2 className="text-xl font-semibold text-gray-900 mb-1">Dan Schwartz</h2>
           <p className="text-primary-600 font-medium">Advisor</p>
-          <p className="text-sm text-gray-600 mt-2">[Insert Dan's bio here]</p>
+          <p className="text-sm text-gray-600 mt-2">
+            MBA Lyola, CEO P Performance Executive Sales and Fundraising, DPIN Foundation COO, Advising on the integration of AI and Distributed GPU computing.
+          </p>
         </div>
 
-        {/* Eric R */}
+              {/* Dheraj Ganjikunta */}
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
-          <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">ER</div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-1">Eric R</h2>
+          <img
+            src="/images/team/dheraj.jpeg"
+            alt="Dheraj Ganjikunta"
+            className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
+          />
+          <h2 className="text-xl font-semibold text-gray-900 mb-1">Dheraj Ganjikunta</h2>
           <p className="text-primary-600 font-medium">Advisor</p>
-          <p className="text-sm text-gray-600 mt-2">[Insert Eric's bio here]</p>
+          <p className="text-sm text-gray-600 mt-2">
+            Co-founder & Lead Program Manager: Brown University’s SBUDNIC Program, Ex-McKinsey & Company Senior Business Analyst, Visiting Researcher Brown University. Advises on launch procedures and NASA/NOAA engagement.
+          </p>
         </div>
 
         {/* Eric Henry */}
@@ -79,7 +89,7 @@ const Team = () => {
           />
           <h2 className="text-xl font-semibold text-gray-900 mb-1">Eric Henry</h2>
           <p className="text-primary-600 font-medium">Advisor</p>
-          <p className="text-sm text-gray-600 mt-2">Former SecOps Deputy Director for the U.S. Government GSA, DoD SecOps expert, Head of Security Ops for Salesforce, and AI Blockchain strategist.</p>
+          <p className="text-sm text-gray-600 mt-2">Former SecOps Deputy Director for the United States Government GSA, DoD SecOps expert, Head of Security Operations for Sales Force and AI Blockchain expert advises on all security and blockchain activities.</p>
         </div>
       </div>
 
