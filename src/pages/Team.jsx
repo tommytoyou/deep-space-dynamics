@@ -53,20 +53,22 @@ const Team = () => {
       </div>
 
       {/* Advisory Board Section */}
-              <div className="bg-white rounded-lg shadow-md p-6 text-center">
+      <div className="grid md:grid-cols-3 gap-10">
+        {/* Dan Schwartz */}
+        <div className="bg-white rounded-lg shadow-md p-6 text-center">
           <img
-            src="/images/dan.jpg"
+            src="/images/team/dan.jpeg"
             alt="Dan Schwartz"
-            className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
           />
           <h2 className="text-xl font-semibold text-gray-900 mb-1">Dan Schwartz</h2>
           <p className="text-primary-600 font-medium">Advisor</p>
           <p className="text-sm text-gray-600 mt-2">
-            MBA Lyola, CEO P Performance Executive Sales and Fundraising, DPIN Foundation COO, Advising on the integration of AI and Distributed GPU computing.
+            MBA Loyola, CEO P Performance Executive Sales and Fundraising, DPIN Foundation COO, advising on the integration of AI and distributed GPU computing.
           </p>
         </div>
 
-              {/* Dheraj Ganjikunta */}
+        {/* Dheraj Ganjikunta */}
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
           <img
             src="/images/team/dheraj.jpeg"
@@ -89,7 +91,9 @@ const Team = () => {
           />
           <h2 className="text-xl font-semibold text-gray-900 mb-1">Eric Henry</h2>
           <p className="text-primary-600 font-medium">Advisor</p>
-          <p className="text-sm text-gray-600 mt-2">Former SecOps Deputy Director for the United States Government GSA, DoD SecOps expert, Head of Security Operations for Sales Force and AI Blockchain expert advises on all security and blockchain activities.</p>
+          <p className="text-sm text-gray-600 mt-2">
+            Former SecOps Deputy Director for the United States Government GSA, DoD SecOps expert, Head of Security Operations for Sales Force and AI Blockchain expert advises on all security and blockchain activities.
+          </p>
         </div>
       </div>
 
