@@ -28,7 +28,7 @@ const Team = () => {
 
           {/* CTO */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">SC</div>
+            <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">https://media.licdn.com/dms/image/v2/C5603AQFFM3db5O60xQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1535737496036?e=1758153600&v=beta&t=Y2OWtJWtzP0_iKXxq08D5HTwn1GIt8KTTu_nWF9ezAU</div>
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Michael Garner</h2>
             <p className="text-primary-600 font-medium">CISO</p>
             <p className="text-sm text-gray-600 mt-2">
