@@ -29,7 +29,7 @@ const Team = () => {
             {/* CISO */}
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
               <img
-                src="/images/team/michael.jpg"
+                src="/images/team/michael.jpeg"
                 alt="Michael Garner"
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
               />
