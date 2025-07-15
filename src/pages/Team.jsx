@@ -110,7 +110,7 @@ const Team = () => {
       {/* CyberIntel Solutions */}
       <div className="bg-white rounded-lg shadow-md p-6 text-center">
         <img
-          src="/images/team/cyberintelsolutions.jpeg" // Update path/filename as needed
+          src="/images/team/cyberintelsolutions.png" // Update path/filename as needed
           alt="CyberIntel Solutions"
           className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
         />
@@ -138,7 +138,7 @@ const Team = () => {
         {/* Seqre */}
       <div className="bg-white rounded-lg shadow-md p-6 text-center">
         <img
-          src="/images/team/seqre.jpeg"
+          src="/images/team/seqre.png"
           alt="Seqre"
           className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
         />
