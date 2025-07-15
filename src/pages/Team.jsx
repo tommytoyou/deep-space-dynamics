@@ -37,13 +37,13 @@ const Team = () => {
             </p>
           </div>
 
-          {/* CSO */}
+          {/* CFO */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/david.jpeg" alt="David Carter" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">David Carter</h2>
-            <p className="text-primary-600 font-medium">Fractional CSO</p>
+            <p className="text-primary-600 font-medium"> CFO</p>
             <p className="text-sm text-gray-600 mt-2">
-              Former CEO & founder Deep Planet, Space Intelligence for the World's Critical Infrastructure & Supply Chains.
+              MBA Oxford Said, Former CEO & founder Deep Planet, Space Intelligence for the World's Critical Infrastructure & Supply Chains.
             </p>
           </div>
         </div>
