@@ -45,14 +45,18 @@ const Team = () => {
             </div>
 
           {/* Fractional CSO */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">AK</div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-1">David Carter</h2>
-            <p className="text-primary-600 font-medium">Fractional CSO</p>
-            <p className="text-sm text-gray-600 mt-2">
-              Former launch ops at SpaceX and ESA. Brings scalable project execution and international collaboration.
-            </p>
-          </div>
+        <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <img
+            src="/images/team/david.jpeg"
+            alt="David Carter"
+            className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
+          />
+          <h2 className="text-xl font-semibold text-gray-900 mb-1">David Carter</h2>
+          <p className="text-primary-600 font-medium">Fractional CSO</p>
+          <p className="text-sm text-gray-600 mt-2">
+            Former CEO & founder Deep Planet, Space Intelligence for the World’s Critical Infrastructure & Supply Chains.
+          </p>
+        </div>
         </div>
       </div>
     </div>
