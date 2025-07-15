@@ -15,16 +15,20 @@ const Team = () => {
         </div>
 
         {/* Leadership Section */}
-        <div className="grid md:grid-cols-3 gap-10">
-          {/* CEO */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">TE</div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-1">Tom Erickson</h2>
-            <p className="text-primary-600 font-medium">Founder & CEO</p>
-            <p className="text-sm text-gray-600 mt-2">
-              20+ years in public engagement, space entrepreneurship, and project management. Visionary behind Deep Space Dynamics.
-            </p>
-          </div>
+            {/* CEO */}
+            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+              <img
+                src="/images/team/tom.jpeg"
+                alt="Tom Erickson"
+                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
+              />
+              <h2 className="text-xl font-semibold text-gray-900 mb-1">Tom Erickson</h2>
+              <p className="text-primary-600 font-medium">Founder & CEO</p>
+              <p className="text-sm text-gray-600 mt-2">
+                20+ years in public engagement, space entrepreneurship, and project management. Visionary behind Deep Space Dynamics.
+              </p>
+            </div>
+
 
             {/* CISO */}
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
@@ -40,11 +44,11 @@ const Team = () => {
               </p>
             </div>
 
-          {/* Ops */}
+          {/* Fractional CSO */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
             <div className="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary-600">AK</div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-1">Dr. Amara Kim</h2>
-            <p className="text-primary-600 font-medium">Chief Operations Officer</p>
+            <h2 className="text-xl font-semibold text-gray-900 mb-1">David Carter</h2>
+            <p className="text-primary-600 font-medium">Fractional CSO</p>
             <p className="text-sm text-gray-600 mt-2">
               Former launch ops at SpaceX and ESA. Brings scalable project execution and international collaboration.
             </p>
