@@ -11,7 +11,7 @@ const Team = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Team</h1>
           <p className="text-lg text-white max-w-2xl mx-auto">
-            A diverse coalition of scientists, engineers, and visionaries working to extend humanity's reach into the solar system.
+            A diverse coalition of entrpreneurs, cyber security experts, and visionaries working to extend humanity's reach throughout the solar system.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ const Team = () => {
         <div className="text-center mt-24 mb-10">
           <h2 className="text-3xl font-bold text-white mb-4">Corporate Partners</h2>
           <p className="text-lg text-white max-w-2xl mx-auto">
-            We collaborate with pioneering firms in aerospace, technology, and logistics to expand humanity’s reach into deep space.
+            We collaborate with first-in-class firms focused on space radiation reliability, cyber security technology, and post-quantum encryption to expand humanity’s reach into deep space.
           </p>
         </div>
 
