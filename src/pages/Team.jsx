@@ -6,7 +6,7 @@ const Team = () => {
       className="bg-cover bg-center min-h-screen"
       style={{ backgroundImage: "url('/images/team/milkyway.jpg')" }}
     >
-      <div className="py-20 bg-white bg-opacity-90">
+      <div className="py-20">
         {/* Our Team Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Team</h1>
@@ -50,8 +50,8 @@ const Team = () => {
 
         {/* Advisory Board Header */}
         <div className="text-center mt-24 mb-10">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Advisory Board</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-4">Advisory Board</h2>
+          <p className="text-lg text-white max-w-2xl mx-auto">
             Industry veterans and domain experts helping steer our strategic direction and technical roadmap.
           </p>
         </div>
@@ -60,11 +60,7 @@ const Team = () => {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Dan Schwartz */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <img
-              src="/images/team/dan.jpeg"
-              alt="Dan Schwartz"
-              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
-            />
+            <img src="/images/team/dan.jpeg" alt="Dan Schwartz" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Dan Schwartz</h2>
             <p className="text-primary-600 font-medium">Advisor</p>
             <p className="text-sm text-gray-600 mt-2">
@@ -72,13 +68,9 @@ const Team = () => {
             </p>
           </div>
 
-          {/* Dheraj Ganjikunta */}
+          {/* Dheraj */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <img
-              src="/images/team/dheraj.jpeg"
-              alt="Dheraj Ganjikunta"
-              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
-            />
+            <img src="/images/team/dheraj.jpeg" alt="Dheraj Ganjikunta" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Dheraj Ganjikunta</h2>
             <p className="text-primary-600 font-medium">Advisor</p>
             <p className="text-sm text-gray-600 mt-2">
@@ -86,72 +78,54 @@ const Team = () => {
             </p>
           </div>
 
-          {/* Eric Henry */}
+          {/* Eric */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <img
-              src="/images/team/eric.jpeg"
-              alt="Eric R"
-              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
-            />
+            <img src="/images/team/eric.jpeg" alt="Eric R" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Eric Henry</h2>
             <p className="text-primary-600 font-medium">Advisor</p>
             <p className="text-sm text-gray-600 mt-2">
-              Former SecOps Deputy Director for the United States Government GSA, DoD SecOps expert, Head of Security Operations for Sales Force and AI Blockchain expert advises on all security and blockchain activities.
+              Former SecOps Deputy Director for the U.S. Government GSA, DoD SecOps expert, Head of Security Operations for Sales Force and AI Blockchain expert.
             </p>
           </div>
         </div>
 
         {/* Corporate Partners Header */}
         <div className="text-center mt-24 mb-10">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Corporate Partners</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We collaborate with pioneering firms in aerospace, technology, and logistics to expand humanity's reach into deep space.
+          <h2 className="text-3xl font-bold text-white mb-4">Corporate Partners</h2>
+          <p className="text-lg text-white max-w-2xl mx-auto">
+            We collaborate with pioneering firms in aerospace, technology, and logistics to expand humanity’s reach into deep space.
           </p>
         </div>
 
         {/* Corporate Partners Section */}
         <div className="grid md:grid-cols-3 gap-10">
-          {/* CyberIntel Solutions */}
+          {/* CIS */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <img
-              src="/images/team/cyberintelsolutions.png"
-              alt="CyberIntel Solutions"
-              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
-            />
+            <img src="/images/team/cyberintelsolutions.png" alt="CyberIntel Solutions" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">CyberIntel Solutions</h2>
             <p className="text-primary-600 font-medium">Post Quantum Encryption Partner</p>
             <p className="text-sm text-gray-600 mt-2">
-              Cyber Intell Solution (CIS) LLC is a cybersecurity firm founded by a former U.S. Special Operations Command (USSOCOM) member. It offers expert consulting, specialized products, and tailored services to government and corporate clients worldwide. CIS is led by professionals with strong ethics and leadership backgrounds in Special Operations and Intelligence.
+              Cyber Intel Solution LLC is a cybersecurity firm founded by a former U.S. Special Operations Command member. It offers expert consulting, products, and tailored services to clients worldwide.
             </p>
           </div>
 
           {/* The Rad Team */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <img
-              src="/images/team/theradteam.jpeg"
-              alt="The Rad Team"
-              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
-            />
+            <img src="/images/team/theradteam.jpeg" alt="The Rad Team" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">The Rad Team</h2>
             <p className="text-primary-600 font-medium">Radiation Reliability for Space Systems</p>
             <p className="text-sm text-gray-600 mt-2">
-              The Rad Team is a specialized radiation reliability consultancy delivering mission-optimized engineering solutions. From precise analysis to efficient execution, it helps space missions meet requirements with confidence and speed.
+              The Rad Team is a specialized radiation reliability consultancy delivering mission-optimized engineering solutions.
             </p>
           </div>
 
           {/* Seqre */}
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <img
-              src="/images/team/seqre.png"
-              alt="Seqre"
-              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600"
-            />
+            <img src="/images/team/seqre.png" alt="Seqre" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Seqre</h2>
-            <p className="text-primary-600 font-medium">
-              Segmented Interdependent Payloads with Evaporating QR Code Delivery Pods
-            </p>
+            <p className="text-primary-600 font-medium">Segmented Interdependent Payloads</p>
             <p className="text-sm text-gray-600 mt-2">
-              SEQRE is a deep-tech U.S. company securing digital communications by embedding confidential messages in encrypted, shareable codes. It protects data, prevents unauthorized access, and streamlines secure communication.
+              SEQRE embeds confidential messages in encrypted, shareable codes. It protects data, prevents unauthorized access, and streamlines secure communication.
             </p>
           </div>
         </div>
