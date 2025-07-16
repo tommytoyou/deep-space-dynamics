@@ -1,73 +1,100 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Contact = () => {
-  const [form, setForm] = useState({ name: '', email: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can handle form submission (e.g., send to backend)
-    setSubmitted(true);
-  };
 
   return (
     <div
       className="bg-cover bg-center min-h-screen"
       style={{ backgroundImage: "url('/images/team/milkyway.jpg')" }}
     >
-      <div className="min-h-screen p-6">
-        <div className="max-w-4xl mx-auto bg-white bg-opacity-95 p-8 rounded-lg shadow-lg">
-          <h1 className="text-4xl font-bold text-center text-indigo-700 mb-4">Contact Us</h1>
-          <p className="text-gray-600 text-center mb-10">
+      <div className="min-h-screen p-6 pt-20">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-4xl font-bold text-center text-white mb-8 mt-8">Contact Us</h1>
+          <p className="text-white text-center mb-16">
             Have a mission, investment inquiry, or collaboration idea? Let's talk.
           </p>
 
-          {submitted ? (
-            <div className="text-center text-green-600 text-xl font-semibold">
-              ✅ Message sent successfully. We'll respond shortly.
+          {/* Three Contact Boxes */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* General Contact */}
+            <div className="bg-white bg-opacity-95 p-6 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-semibold text-indigo-700 mb-4">General Contact</h2>
+              <div className="space-y-3">
+                <div>
+                  <h3 className="font-medium text-gray-700">Address</h3>
+                  <p className="text-gray-600">
+                    1234 Space Innovation Drive<br />
+                    Tech Valley, CA 94043<br />
+                    United States
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-gray-700">Email</h3>
+                  <p className="text-gray-600">
+                    <a href="mailto:info@company.com" className="text-indigo-600 hover:text-indigo-700">
+                      info@company.com
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-gray-700">Phone</h3>
+                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                </div>
+              </div>
             </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="name">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded-md px-4 py-2"
-                />
-              </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="email">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full border border-gray-300 rounded-md px-4 py-2"
-                />
+            {/* Press Inquiries */}
+            <div className="bg-white bg-opacity-95 p-6 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Press Inquiries</h2>
+              <div className="space-y-3">
+                <p className="text-gray-600">
+                  For media inquiries, interviews, and press releases about our space missions and technology.
+                </p>
+                <div>
+                  <h3 className="font-medium text-gray-700">Press Contact</h3>
+                  <p className="text-gray-600">
+                    <a href="mailto:press@company.com" className="text-indigo-600 hover:text-indigo-700">
+                      press@company.com
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-gray-700">Media Kit</h3>
+                  <p className="text-gray-600">
+                    <a href="#" className="text-indigo-600 hover:text-indigo-700">
+                      Download Press Kit
+                    </a>
+                  </p>
+                </div>
               </div>
+            </div>
 
-              <button
-                type="submit"
-                className="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition"
-              >
-                Send Message
-              </button>
-            </form>
-          )}
+            {/* Business Partners */}
+            <div className="bg-white bg-opacity-95 p-6 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Business Partners</h2>
+              <div className="space-y-3">
+                <p className="text-gray-600">
+                  For partnerships, collaborations, and business development opportunities.
+                </p>
+                <div>
+                  <h3 className="font-medium text-gray-700">Partnerships</h3>
+                  <p className="text-gray-600">
+                    <a href="mailto:partners@company.com" className="text-indigo-600 hover:text-indigo-700">
+                      partners@company.com
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-gray-700">Business Development</h3>
+                  <p className="text-gray-600">
+                    <a href="mailto:business@company.com" className="text-indigo-600 hover:text-indigo-700">
+                      business@company.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

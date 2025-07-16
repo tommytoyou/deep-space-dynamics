@@ -19,7 +19,7 @@ const Product = () => {
           </div>
 
           {/* Product Blocks */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Neuman CubeSat */}
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Neuman-Class CubeSat</h2>
@@ -70,6 +70,34 @@ const Product = () => {
                 <li>White-label CubeSat kits</li>
                 <li>Custom mission design support</li>
                 <li>Training and documentation</li>
+              </ul>
+            </div>
+
+            {/* Deep Space Communications */}
+            <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Deep Space Communications</h2>
+              <p className="text-gray-600 mb-4">
+                Advanced communication systems designed for long-range space missions with enhanced signal processing capabilities.
+              </p>
+              <ul className="list-disc list-inside text-gray-600">
+                <li>High-gain antenna systems</li>
+                <li>Adaptive signal processing</li>
+                <li>Low-power consumption design</li>
+                <li>Interplanetary relay compatibility</li>
+              </ul>
+            </div>
+
+            {/* Mission Planning AI */}
+            <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Mission Planning AI</h2>
+              <p className="text-gray-600 mb-4">
+                Intelligent mission planning and optimization software that maximizes mission success rates and resource efficiency.
+              </p>
+              <ul className="list-disc list-inside text-gray-600">
+                <li>Automated trajectory optimization</li>
+                <li>Resource allocation algorithms</li>
+                <li>Risk assessment modeling</li>
+                <li>Real-time mission adaptation</li>
               </ul>
             </div>
           </div>
