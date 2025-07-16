@@ -43,7 +43,7 @@ const Technology = () => {
               <ul className="list-disc list-inside text-gray-600">
                 <li>CyberIntel Solutions Post-Quantum Encryption</li>
                 <li>Seqre TTL Evaporating QR codes</li>
-                <li>Segmented Interdependent Payloadss</li>
+                <li>Segmented Interdependent Payloads</li>
               </ul>
             </div>
 
