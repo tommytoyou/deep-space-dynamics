@@ -22,82 +22,85 @@ const Product = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Neuman CubeSat */}
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Neuman-Class CubeSat</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Neuman 3U Spacecraft </h2>
               <p className="text-gray-600 mb-4">
-                Our flagship 3U CubeSat platform optimized for interplanetary exploration, asteroid detection, and scientific research.
+                 Spacecraft-as-a-Service mission-ready for planetary science, asteroid defense, deep-space operations, and autonomous infrastructure.
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li>Radiation-hardened electronics</li>
-                <li>AI onboard autonomy</li>
-                <li>Plug-and-play payload integration</li>
+                <li>Autonomous AI </li>
+                <li>Full Spectrum Scientific Payload</li>
                 <li>Solar + battery hybrid power</li>
+                <li>Furlable Solar Sail in development</li>
               </ul>
             </div>
 
             {/* Swarm Infrastructure */}
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Swarm CubeSat Constellations</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Space Weather Dew Line</h2>
               <p className="text-gray-600 mb-4">
-                Our CubeSat swarms are engineered for scalable asteroid detection and collaborative mission coordination at planetary scale.
+                Tactical Space Weather Intelligence TSWI - Real-time, high-resolution space weather data from Lagrange point Spacecraft, supporting military and commercial operations.
               </p>
               <ul className="list-disc list-inside text-gray-600">
-                <li>Autonomous formation flying</li>
+                <li> Solar events monitoring</li>
                 <li>Distributed sensing and data fusion</li>
-                <li>Self-healing mesh communications</li>
+                <li>Real-time space weather alerts</li>
+                <li>U.S. Space Force & NASA support</li>
               </ul>
             </div>
 
             {/* Ground Interface */}
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Ground Operations Suite</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2"> Asteroid Detection Grid</h2>
               <p className="text-gray-600 mb-4">
-                Our command and data handling software integrates with existing ground systems, offering real-time control and insight.
+               Lagrange-Based Asteroid Detection Grid LAD-G Neuman 3U Spacecraft at Earth, Venus, Mars, and Moon  L4/L5 points form an orbital net for real-time NEO and asteroid threat detection.
               </p>
               <ul className="list-disc list-inside text-gray-600">
-                <li>Cloud-native dashboard</li>
-                <li>Encrypted telemetry streams</li>
-                <li>Mission replay & analytics</li>
+                <li>Strategic optimal vantage</li>
+                <li>Synchronized optical/IR imaging</li>
+                <li>Track Sunward Earthbound NEOs</li>
+                <li>AI-driven data fusion</li>
               </ul>
             </div>
 
             {/* Licensing / Services */}
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">OEM Licensing & Customization</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Navigation Relay</h2>
               <p className="text-gray-600 mb-4">
-                We license our CubeSat designs and mission software for universities, startups, and space agencies.
+                Lagrange Point Communications & Navigation Relay LPCNR Neuman Spacecraft at Lagrange points provide deep-space communication and navigation support for spacecraft and lunar missions.
               </p>
               <ul className="list-disc list-inside text-gray-600">
-                <li>White-label CubeSat kits</li>
-                <li>Custom mission design support</li>
-                <li>Training and documentation</li>
+                <li>RF/optical reliable data relay</li>
+                <li>Position triangulation navigation</li>
+                <li>Serving NASA, DoD, and U.S. commercial spaceflight</li>
               </ul>
             </div>
 
             {/* Deep Space Communications */}
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Deep Space Communications</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Academic Subscriptions</h2>
               <p className="text-gray-600 mb-4">
-                Advanced communication systems designed for long-range space missions with enhanced signal processing capabilities.
+                High-resolution space data access from Lagrange point CubeSats, tailored for university research and academic institutions.
               </p>
               <ul className="list-disc list-inside text-gray-600">
-                <li>High-gain antenna systems</li>
-                <li>Adaptive signal processing</li>
-                <li>Low-power consumption design</li>
+                <li>Real-time NEO and space weather</li>
+                <li>Secure, encrypted data access</li>
+                <li>Support university STEM programs</li>
                 <li>Interplanetary relay compatibility</li>
               </ul>
             </div>
 
             {/* Mission Planning AI */}
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Mission Planning AI</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Mineral Subscriptions</h2>
               <p className="text-gray-600 mb-4">
-                Intelligent mission planning and optimization software that maximizes mission success rates and resource efficiency.
+                Asteroid Prospecting Subscriptions Real-time prospecting data for rare earths and strategic minerals from Neuman CubeSats in the Main Asteroid Belt and Jupiter's Trojans.
               </p>
               <ul className="list-disc list-inside text-gray-600">
-                <li>Automated trajectory optimization</li>
-                <li>Resource allocation algorithms</li>
-                <li>Risk assessment modeling</li>
-                <li>Real-time mission adaptation</li>
+                <li>High-res mineral mapping</li>
+                <li>AI spectral rare earth detection</li>
+                <li>Post-quantum secure encryption</li>
+                <li>Serving NASA, DoD, and U.S. aerospace industries</li>
               </ul>
             </div>
           </div>

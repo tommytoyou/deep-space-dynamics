@@ -18,37 +18,37 @@ const Mission = () => {
             </p>
           </div>
 
-          {/* Vision */}
+          {/* Phase 1 */}
           <div className="bg-white bg-opacity-95 rounded-lg shadow-lg p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Phase 1: Inner Solar System Sensor Network</h2>
             <p className="text-lg text-gray-700 mb-6">
-              We envision a future where humanity thrives across the solar system — sustainable colonies on Mars, asteroid mining operations, and orbital research stations. Deep Space Dynamics will be the backbone of this next era.
+              Deep Space Dynamics will deploy Neuman 3U spacecraft to the Lagrange Points and key orbital positions around Venus, Earth, Mars, and the Moon. This strategic network will serve as an early warning system for coronal mass ejections and asteroid threats, enhancing planetary defense capabilities. In addition, these Neuman 3U spacecraft will function as communications and navigation nodes to support cislunar logistics and future Mars-bound missions. Over time, this architecture will form the initial backbone of an interplanetary communication and data relay system, enabling persistent, autonomous space operations throughout the inner solar system.
             </p>
             <p className="text-lg text-gray-700">
               Our commitment goes beyond exploration — it's about securing Earth's future through space-enabled breakthroughs in technology, resource access, and defense.
             </p>
           </div>
 
-          {/* Core Values */}
+          {/* Phase 2 */}
           <div className="bg-white bg-opacity-95 rounded-lg shadow-lg p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Phase 2: Main Asteroid Belt Prospecting for Rare Earths & Strategic Minerals</h2>
-            <ul className="space-y-3 text-gray-700">
-              <li><span className="text-primary-600 mr-2">•</span><strong>Innovation:</strong> Bold engineering beyond Earth</li>
-              <li><span className="text-primary-600 mr-2">•</span><strong>Integrity:</strong> Ethical science with global impact</li>
-              <li><span className="text-primary-600 mr-2">•</span><strong>Sustainability:</strong> Self-sufficient systems for long-term survival</li>
-              <li><span className="text-primary-600 mr-2">•</span><strong>Security:</strong> Protecting Earth through strategic orbital defense</li>
-            </ul>
+            <p className="text-lg text-gray-700 mb-6">
+              Deep Space Dynamics will extend its Lagrange point coverage to include Mercury and deploy Neuman 3U spacecraft to conduct advanced prospecting missions throughout the Asteroid Belt. These missions will focus on identifying rare earth elements and performing strategic resource mapping to evaluate the potential for future in-situ resource utilization (ISRU). Additionally, the Neuman 3U spacecraft will enable deep-space trajectory tracking and provide essential orbital redundancy. This expansion will further strengthen the inner solar system’s mesh network, reinforcing the backbone of autonomous, resilient space infrastructure for American-led deep-space operations.
+            </p>
+            <p className="text-lg text-gray-700">
+              Through innovative extraction technologies and automated mining systems, we'll establish sustainable resource flows that reduce Earth's dependence on terrestrial mining while opening new frontiers for economic growth.
+            </p>
           </div>
 
-          {/* Strategic Objectives */}
+          {/* Phase 3 */}
           <div className="bg-white bg-opacity-95 rounded-lg shadow-lg p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Phase 3: Outer Solar System Sensor Network</h2>
-            <ul className="space-y-3 text-gray-700">
-              <li><span className="text-primary-600 mr-2">•</span>Develop next-gen CubeSats and propulsion systems</li>
-              <li><span className="text-primary-600 mr-2">•</span>Deploy deep space missions for planetary science</li>
-              <li><span className="text-primary-600 mr-2">•</span>Deliver asteroid detection and deflection tech</li>
-              <li><span className="text-primary-600 mr-2">•</span>Partner with governments and agencies for security and exploration</li>
-            </ul>
+            <p className="text-lg text-gray-700 mb-6">
+              Extending its reach to the outer solar system, Deep Space Dynamics will deploy an advanced network of Neuman 3U spacecraft equipped with sophisticated sensors to monitor deep-space threats, study distant planetary bodies, and establish early warning systems that enhance Earth’s protection. This expansion will scale to over 1,000 Neuman 3U spacecraft strategically positioned across Jupiter’s Trojan clusters and key outer planetary corridors. These spacecraft will provide redundant, solar system–wide communications and continuous monitoring, solidifying a global American footprint in deep-space infrastructure, scientific leadership, and strategic deterrence.
+            </p>
+            <p className="text-lg text-gray-700">
+              This comprehensive surveillance network will provide unprecedented insights into solar system dynamics while serving as humanity's first line of defense against cosmic threats and enabling scientific discoveries that will shape our understanding of the universe.
+            </p>
           </div>
         </div>
       </div>
