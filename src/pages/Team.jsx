@@ -31,9 +31,9 @@ const Team = () => {
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/michael.jpeg" alt="Michael Garner" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Michael Garner</h2>
-            <p className="text-primary-600 font-medium">CISO</p>
+            <p className="text-primary-600 font-medium">Co-founder & CISO</p>
             <p className="text-sm text-gray-600 mt-2">
-              A Dynamic Senior IS executive and former Defense Information Systems Agency Cyber Security Analyst with 15+ years experience identifying threats to information asset integrity, availability, and confidentiality.
+             MS Cyber Security Brown University A Dynamic Senior IS executive and former Defense Information Systems Agency Cyber Security Analyst with 15+ years experience identifying threats to information asset integrity, availability, and confidentiality.
             </p>
           </div>
 
