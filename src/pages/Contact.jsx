@@ -23,8 +23,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium text-gray-700">Address</h3>
                   <p className="text-gray-600">
-                    1234 Space Innovation Drive<br />
-                    Tech Valley, CA 94043<br />
+                    30 N Gould St Ste R<br />
+                    Sheridan, WY 82801<br />
                     United States
                   </p>
                 </div>
@@ -32,13 +32,13 @@ const Contact = () => {
                   <h3 className="font-medium text-gray-700">Email</h3>
                   <p className="text-gray-600">
                     <a href="mailto:info@company.com" className="text-indigo-600 hover:text-indigo-700">
-                      info@company.com
+                      contact@deepspacedynamics.us
                     </a>
                   </p>
                 </div>
                 <div>
                   <h3 className="font-medium text-gray-700">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+1 (771) 220-4452</p>
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                   <h3 className="font-medium text-gray-700">Press Contact</h3>
                   <p className="text-gray-600">
                     <a href="mailto:press@company.com" className="text-indigo-600 hover:text-indigo-700">
-                      press@company.com
+                      contact@deepspacedynamics.us
                     </a>
                   </p>
                 </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                   <h3 className="font-medium text-gray-700">Partnerships</h3>
                   <p className="text-gray-600">
                     <a href="mailto:partners@company.com" className="text-indigo-600 hover:text-indigo-700">
-                      partners@company.com
+                      contact@deepspacedynamics.us
                     </a>
                   </p>
                 </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                   <h3 className="font-medium text-gray-700">Business Development</h3>
                   <p className="text-gray-600">
                     <a href="mailto:business@company.com" className="text-indigo-600 hover:text-indigo-700">
-                      business@company.com
+                      contact@deepspacedynamics.us
                     </a>
                   </p>
                 </div>
