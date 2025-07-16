@@ -39,7 +39,7 @@ const Product = () => {
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Space Weather Dew Line</h2>
               <p className="text-gray-600 mb-4">
-                Tactical Space Weather Intelligence TSWI - Real-time, high-resolution space weather data from Lagrange point Spacecraft, supporting military and commercial operations.
+                Tactical Space Weather Intelligence TSWI - Real-time, high-resolution space weather data from Lagrange point spacecraft, supporting military and commercial operations.
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li> Solar events monitoring</li>
@@ -80,7 +80,7 @@ const Product = () => {
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Academic Subscriptions</h2>
               <p className="text-gray-600 mb-4">
-                High-resolution space data access from Lagrange point CubeSats, tailored for university research and academic institutions.
+                High-resolution space data access from Lagrange point Neumans, tailored for university research and academic institutions.
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li>Real-time NEO and space weather</li>
@@ -94,7 +94,7 @@ const Product = () => {
             <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Mineral Subscriptions</h2>
               <p className="text-gray-600 mb-4">
-                Asteroid Prospecting Subscriptions Real-time prospecting data for rare earths and strategic minerals from Neuman CubeSats in the Main Asteroid Belt and Jupiter's Trojans.
+                Asteroid Prospecting Subscriptions Real-time prospecting data for rare earths and strategic minerals from Neumans in the Main Asteroid Belt and Jupiter's Trojans.
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li>High-res mineral mapping</li>
