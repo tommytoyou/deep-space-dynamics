@@ -64,7 +64,7 @@ const Technology = () => {
             <div className="bg-white bg-opacity-95 rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">AI & Edge Computing</h2>
               <p className="text-gray-700 mb-2">
-                Onboard AI manages fault detection, mission planning, and cross-satellite swarm collaboration.
+                Onboard AI manages fault detection, mission planning, and cross-platform swarm collaboration.
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li>Low-latency mesh communication</li>
