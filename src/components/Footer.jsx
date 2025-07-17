@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Footer = () => {
@@ -21,7 +22,7 @@ const Footer = () => {
             <a href="#" className="text-space-300 hover:text-white text-sm transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="text-space-300 hover:text-white text-sm transition-colors">
+            <a href="https://www.linkedin.com/company/deep-space-dynamics/" className="text-space-300 hover:text-white text-sm transition-colors" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
             <a href="#" className="text-space-300 hover:text-white text-sm transition-colors">
