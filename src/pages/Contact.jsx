@@ -80,7 +80,7 @@ const Contact = () => {
                   <h3 className="font-medium text-gray-700">Partnerships</h3>
                   <p className="text-gray-600">
                     <a href="mailto:partners@company.com" className="text-indigo-600 hover:text-indigo-700">
-                     inquiry@deepspacedynamics.us 
+                     Dave@deepspacedynamics.us 
                     </a>
                   </p>
                 </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                   <h3 className="font-medium text-gray-700">Business Development</h3>
                   <p className="text-gray-600">
                     <a href="mailto:business@company.com" className="text-indigo-600 hover:text-indigo-700">
-                     inquiry@deepspacedynamics.us 
+                     Dave@deepspacedynamics.us 
                     </a>
                   </p>
                 </div>
