@@ -105,7 +105,7 @@ const Team = () => {
             <h2 className="text-xl font-semibold text-gray-900 mb-1">CyberIntel Solutions</h2>
             <p className="text-primary-600 font-medium">Post Quantum Encryption Partner</p>
             <p className="text-sm text-gray-600 mt-2">
-              Cyber Intel Solution LLC is a cybersecurity firm founded by a former U.S. Special Operations Command member. It offers expert consulting, products, and tailored services to clients worldwide.
+              Cyber Intel Solution LLC is the world's premier cybersecurity firm founded by a former U.S. Special Operations Command member. It offers expert consulting, products, and tailored services to clients worldwide.
             </p>
           </div>
 
@@ -115,7 +115,7 @@ const Team = () => {
             <h2 className="text-xl font-semibold text-gray-900 mb-1">The Rad Team</h2>
             <p className="text-primary-600 font-medium">Radiation Reliability for Space Systems</p>
             <p className="text-sm text-gray-600 mt-2">
-              The Rad Team is a specialized radiation reliability consultancy delivering mission-optimized engineering solutions.
+              The Rad Team is the world's best specialized radiation reliability consultancy delivering mission-optimized engineering solutions.
             </p>
           </div>
 
