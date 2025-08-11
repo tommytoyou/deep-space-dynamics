@@ -22,9 +22,9 @@ const Product = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Neuman CubeSat */}
             <div className="bg-[#eeeeee] bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Neuman 3U Spacecraft </h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Spacecraft-as-a-Service SPAAS</h2>
               <p className="text-gray-600 mb-4">
-                 Spacecraft-as-a-Service mission-ready for planetary science, asteroid defense, deep-space operations, and autonomous infrastructure.
+                 Neuman 3U Spacecraft are mission-ready for planetary science, asteroid defense, deep-space operations, and autonomous infrastructure.
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li>Radiation-hardened electronics</li>
@@ -37,9 +37,9 @@ const Product = () => {
 
             {/* Swarm Infrastructure */}
             <div className="bg-[#eeeeee] bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Space Weather Dew Line</h2>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Tactical Space Weather Intelligence TSWI</h2>
               <p className="text-gray-600 mb-4">
-                Tactical Space Weather Intelligence TSWI - Real-time, high-resolution space weather data from Lagrange point spacecraft, supporting military and commercial operations.
+                Space Weather Dew Line- Real-time, high-resolution space weather data from Lagrange point spacecraft, supporting military and commercial operations.
               </p>
               <ul className="list-disc list-inside text-gray-600">
                 <li> Solar events monitoring</li>
