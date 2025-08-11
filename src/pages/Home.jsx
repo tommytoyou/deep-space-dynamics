@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div
       className="bg-cover bg-center min-h-screen"
-      style={{ backgroundImage: "url('/images/team/Space.png')" }}
+      style={{ backgroundImage: "url('/images/team/milkyway.jpg')" }}
     >
       {/* Hero Section */}
       <section className="text-white">
