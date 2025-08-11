@@ -18,7 +18,7 @@ const Team = () => {
         {/* Our Team Section */}
         <div className="grid md:grid-cols-3 gap-10">
           {/* CEO */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/tom.jpeg" alt="Tom Erickson" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Tom Erickson</h2>
             <p className="text-primary-600 font-medium">Founder & CEO</p>
@@ -28,7 +28,7 @@ const Team = () => {
           </div>
 
           {/* CISO */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/michael.jpeg" alt="Michael Garner" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Michael Garner</h2>
             <p className="text-primary-600 font-medium">Co-founder & CISO</p>
@@ -38,7 +38,7 @@ const Team = () => {
           </div>
 
           {/* CFO */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/david.jpeg" alt="David Carter" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">David Carter</h2>
             <p className="text-primary-600 font-medium"> CFO</p>
@@ -59,7 +59,7 @@ const Team = () => {
         {/* Advisory Board Section */}
         <div className="grid md:grid-cols-3 gap-10">
           {/* Dan Schwartz */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/dan.jpeg" alt="Dan Schwartz" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Dan Schwartz</h2>
             <p className="text-primary-600 font-medium">Advisor</p>
@@ -69,7 +69,7 @@ const Team = () => {
           </div>
 
           {/* Dheraj */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/dheraj.jpeg" alt="Dheraj Ganjikunta" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Dheraj Ganjikunta</h2>
             <p className="text-primary-600 font-medium">Advisor</p>
@@ -79,7 +79,7 @@ const Team = () => {
           </div>
 
           {/* Eric */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/eric.jpeg" alt="Eric R" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Eric Henry</h2>
             <p className="text-primary-600 font-medium">Advisor</p>
@@ -100,7 +100,7 @@ const Team = () => {
         {/* Corporate Partners Section */}
         <div className="grid md:grid-cols-3 gap-10">
           {/* CIS */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/cyberintelsolutions.png" alt="CyberIntel Solutions" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">CyberIntel Solutions</h2>
             <p className="text-primary-600 font-medium">Post Quantum Encryption Partner</p>
@@ -110,7 +110,7 @@ const Team = () => {
           </div>
 
           {/* The Rad Team */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/theradteam.jpeg" alt="The Rad Team" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">The Rad Team</h2>
             <p className="text-primary-600 font-medium">Radiation Reliability for Space Systems</p>
@@ -120,7 +120,7 @@ const Team = () => {
           </div>
 
           {/* Seqre */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="bg-[#eeeeee] rounded-lg shadow-md p-6 text-center">
             <img src="/images/team/seqre.png" alt="Seqre" className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-primary-600" />
             <h2 className="text-xl font-semibold text-gray-900 mb-1">Seqre</h2>
             <p className="text-primary-600 font-medium">Segmented Interdependent Payloads</p>

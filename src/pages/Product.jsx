@@ -21,7 +21,7 @@ const Product = () => {
           {/* Product Blocks */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Neuman CubeSat */}
-            <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div className="bg-[#eeeeee] bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Neuman 3U Spacecraft </h2>
               <p className="text-gray-600 mb-4">
                  Spacecraft-as-a-Service mission-ready for planetary science, asteroid defense, deep-space operations, and autonomous infrastructure.
@@ -36,7 +36,7 @@ const Product = () => {
             </div>
 
             {/* Swarm Infrastructure */}
-            <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div className="bg-[#eeeeee] bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Space Weather Dew Line</h2>
               <p className="text-gray-600 mb-4">
                 Tactical Space Weather Intelligence TSWI - Real-time, high-resolution space weather data from Lagrange point spacecraft, supporting military and commercial operations.
@@ -50,7 +50,7 @@ const Product = () => {
             </div>
 
             {/* Ground Interface */}
-            <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div className="bg-[#eeeeee] bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2"> Asteroid Detection Grid</h2>
               <p className="text-gray-600 mb-4">
                Lagrange-Based Asteroid Detection Grid LAD-G Neuman 3U Spacecraft at Earth, Venus, Mars, and Moon  L4/L5 points form an orbital net for real-time NEO and asteroid threat detection.
@@ -64,7 +64,7 @@ const Product = () => {
             </div>
 
             {/* Licensing / Services */}
-            <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div className="bg-[#eeeeee] bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Navigation Relay</h2>
               <p className="text-gray-600 mb-4">
                 Lagrange Point Communications & Navigation Relay LPCNR Neuman Spacecraft at Lagrange points provide deep-space communication and navigation support for spacecraft and lunar missions.
@@ -77,7 +77,7 @@ const Product = () => {
             </div>
 
             {/* Deep Space Communications */}
-            <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div className="bg-[#eeeeee] bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Academic Subscriptions</h2>
               <p className="text-gray-600 mb-4">
                 High-resolution space data access from Lagrange point Neumans, tailored for university research and academic institutions.
@@ -91,7 +91,7 @@ const Product = () => {
             </div>
 
             {/* Mission Planning AI */}
-            <div className="bg-white bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
+            <div className="bg-[#eeeeee] bg-opacity-95 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Mineral Subscriptions</h2>
               <p className="text-gray-600 mb-4">
                 Asteroid Prospecting Subscriptions Real-time prospecting data for rare earths and strategic minerals from Neumans in the Main Asteroid Belt and Jupiter's Trojans.

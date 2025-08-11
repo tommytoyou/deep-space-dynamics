@@ -17,7 +17,7 @@ const Contact = () => {
           {/* Three Contact Boxes */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* General Contact */}
-            <div className="bg-white bg-opacity-95 p-6 rounded-lg shadow-lg">
+            <div className="bg-[#eeeeee] bg-opacity-95 p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-semibold text-indigo-700 mb-4">General Contact</h2>
               <div className="space-y-3">
                 <div>
@@ -44,7 +44,7 @@ const Contact = () => {
             </div>
 
             {/* Press Inquiries */}
-            <div className="bg-white bg-opacity-95 p-6 rounded-lg shadow-lg">
+            <div className="bg-[#eeeeee] bg-opacity-95 p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Press Inquiries</h2>
               <div className="space-y-3">
                 <p className="text-gray-600">
@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
 
             {/* Business Partners */}
-            <div className="bg-white bg-opacity-95 p-6 rounded-lg shadow-lg">
+            <div className="bg-[#eeeeee] bg-opacity-95 p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Business Partners</h2>
               <div className="space-y-3">
                 <p className="text-gray-600">

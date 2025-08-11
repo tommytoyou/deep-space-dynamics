@@ -21,7 +21,7 @@ const Technology = () => {
           {/* Feature Blocks */}
           <div className="grid md:grid-cols-2 gap-10">
             {/* Neuman CubeSat */}
-            <div className="bg-white bg-opacity-95 rounded-lg shadow-md p-6">
+            <div className="bg-[#eeeeee] bg-opacity-95 rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Neuman-Class Spacecraft</h2>
               <p className="text-gray-700 mb-2">
                 A modular 3U Spacecraft designed for asteroid detection, interplanetary science, and real-time data relays from deep space missions.
@@ -35,7 +35,7 @@ const Technology = () => {
             </div>
 
             {/* Propulsion */}
-            <div className="bg-white bg-opacity-95 rounded-lg shadow-md p-6">
+            <div className="bg-[#eeeeee] bg-opacity-95 rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Unbreakable Encryption</h2>
               <p className="text-gray-700 mb-2">
                The combination of post-quantum encryption, evaporating time-to-live QR codes and information capsules combined with segmented interdependent payloads make Deep Space Dynamics communications arguably the most secure in the Solar System.
@@ -48,7 +48,7 @@ const Technology = () => {
             </div>
 
             {/* Sensing */}
-            <div className="bg-white bg-opacity-95 rounded-lg shadow-md p-6">
+            <div className="bg-[#eeeeee] bg-opacity-95 rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Asteroid Detection Arrays</h2>
               <p className="text-gray-700 mb-2">
                 Onboard visible and infrared optics scan for NEOs (Near-Earth Objects) and deep-belt asteroids.
@@ -61,7 +61,7 @@ const Technology = () => {
             </div>
 
             {/* AI / Comms */}
-            <div className="bg-white bg-opacity-95 rounded-lg shadow-md p-6">
+            <div className="bg-[#eeeeee] bg-opacity-95 rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">AI & Edge Computing</h2>
               <p className="text-gray-700 mb-2">
                 Onboard AI manages fault detection, mission planning, and cross-platform swarm collaboration.
