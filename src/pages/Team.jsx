@@ -79,7 +79,7 @@ const Team = () => {
             <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
               <div className="relative mb-6">
                 <img 
-                  src="/photos/Team/shraddha.png" 
+                  src="/images/team/shraddha.png" 
                   alt="Shraddha Barawka" 
                   className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-blue-600 shadow-lg" 
                 />
