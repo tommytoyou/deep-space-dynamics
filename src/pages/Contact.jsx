@@ -80,7 +80,7 @@ const Contact = () => {
                   <h3 className="font-medium text-gray-700">Partnerships</h3>
                   <p className="text-gray-600">
                     <a href="mailto:partners@company.com" className="text-indigo-600 hover:text-indigo-700">
-                     Dave@deepspacedynamics.us 
+                     tom.erickson@deepspacedynamics.us 
                     </a>
                   </p>
                 </div>
