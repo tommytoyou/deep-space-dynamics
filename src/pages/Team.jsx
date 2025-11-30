@@ -60,6 +60,7 @@ const Team = () => {
             </div>
 
             {/* CFO */}
+{/* 
             <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
               <div className="relative mb-6">
                 <img 
@@ -74,7 +75,7 @@ const Team = () => {
                 MBA Oxford Said. Former CEO & founder Deep Planet, Space Intelligence for the World's Critical Infrastructure & Supply Chains.
               </p>
             </div>
-
+*/}
             {/* CTO - New Addition */}
             <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
               <div className="relative mb-6">
