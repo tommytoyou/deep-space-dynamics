@@ -23,10 +23,10 @@ const Team = () => {
         {/* Cofounders Section */}
         <div className="mb-24">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Leadership Team</h2>
+            <h2 className="text-3xl font-bold text-white mb-3">Leadership Team</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* CEO */}
             <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
               <div className="relative mb-6">
