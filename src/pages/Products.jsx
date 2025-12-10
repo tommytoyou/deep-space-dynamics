@@ -74,17 +74,26 @@ const ConstellationDiagram = () => (
     <circle cx="285" cy="60" r="8" fill="#00D4AA" />
     <text x="300" y="50" fill="#00D4AA" fontSize="8" fontFamily="Inter">M-L5</text>
 
-    {/* Earth-Sun L1 */}
-    <circle cx="280" cy="200" r="6" fill="#00D4AA" opacity="0.7" />
-    <text x="280" y="188" textAnchor="middle" fill="#00D4AA" fontSize="7" opacity="0.7" fontFamily="Inter">L1</text>
+    {/* Moon orbit around Earth (centered at Earth's position 320, 200) */}
+    <circle cx="320" cy="200" r="25" stroke="#475569" strokeWidth="1" fill="none" strokeDasharray="2 2" />
 
-    {/* Earth-Sun L2 */}
-    <circle cx="350" cy="200" r="6" fill="#00D4AA" opacity="0.7" />
-    <text x="350" y="188" textAnchor="middle" fill="#00D4AA" fontSize="7" opacity="0.7" fontFamily="Inter">L2</text>
+    {/* Moon (positioned on orbit) */}
+    <circle cx="345" cy="200" r="3" fill="#9ca3af" />
+    <text x="358" y="203" fill="#94a3b8" fontSize="7" fontFamily="Inter">Luna</text>
+
+    {/* Earth-Moon L4 (60° ahead of Moon on lunar orbit) */}
+    {/* Moon at 0°, L4 at 60° ahead: x = 320 + 25*cos(-60°), y = 200 + 25*sin(-60°) */}
+    <circle cx="332.5" cy="178.3" r="8" fill="#00D4AA" />
+    <text x="345" y="172" fill="#00D4AA" fontSize="8" fontFamily="Inter">EM-L4</text>
+
+    {/* Earth-Moon L5 (60° behind Moon on lunar orbit) */}
+    {/* Moon at 0°, L5 at 60° behind: x = 320 + 25*cos(60°), y = 200 + 25*sin(60°) */}
+    <circle cx="332.5" cy="221.7" r="8" fill="#00D4AA" />
+    <text x="345" y="232" fill="#00D4AA" fontSize="8" fontFamily="Inter">EM-L5</text>
 
     {/* Legend */}
     <rect x="10" y="360" width="12" height="12" rx="6" fill="#00D4AA" />
-    <text x="28" y="370" fill="#94a3b8" fontSize="10" fontFamily="Inter">Neuman Spacecraft</text>
+    <text x="28" y="370" fill="#94a3b8" fontSize="10" fontFamily="Inter">Neuman Spacecraft (8 total)</text>
   </svg>
 );
 
