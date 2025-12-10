@@ -1,32 +1,38 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
-import Mission from './pages/Mission';
-import Technology from './pages/Technology';
-import Product from './pages/Product';
-import Team from './pages/Team';
+import Products from './pages/Products';
+import About from './pages/About';
 import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/mission" element={<Mission />} />
-            <Route path="/technology" element={<Technology />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="min-h-screen flex flex-col">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/product" element={<Navigate to="/products" replace />} />
+              <Route path="/about" element={<About />} />
+              {/* Legacy routes redirect to About */}
+              <Route path="/team" element={<Navigate to="/about" replace />} />
+              <Route path="/mission" element={<Navigate to="/about" replace />} />
+              <Route path="/technology" element={<Navigate to="/products" replace />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 

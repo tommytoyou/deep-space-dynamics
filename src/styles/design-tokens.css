@@ -1,0 +1,133 @@
+/**
+ * Deep Space Dynamics - Design Tokens
+ * CSS Custom Properties mirroring Tailwind config values
+ * Use these for custom CSS or non-Tailwind components
+ */
+
+:root {
+  /* ===== EXISTING COLORS (Backward Compatibility) ===== */
+
+  /* Space palette - muted blue-grays */
+  --color-space-50: #f0f4f8;
+  --color-space-100: #d9e2ec;
+  --color-space-200: #bcccdc;
+  --color-space-300: #9fb3c8;
+  --color-space-400: #829ab1;
+  --color-space-500: #627d98;
+  --color-space-600: #486581;
+  --color-space-700: #334e68;
+  --color-space-800: #243b53;
+  --color-space-900: #102a43;
+
+  /* Primary palette - vibrant blues */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  /* ===== NEW COLORS ===== */
+
+  /* Navy palette - deep dark backgrounds */
+  --color-navy-900: #050B14;
+  --color-navy-800: #0A1628;
+  --color-navy-700: #0F2140;
+
+  /* Accent palette - teal/cyan highlights */
+  --color-accent: #00D4AA;
+  --color-accent-light: #00FFD0;
+  --color-accent-dark: #00A888;
+
+  /* Solar palette - warm orange for energy */
+  --color-solar: #FF6B35;
+  --color-solar-light: #FF8F66;
+  --color-solar-dark: #CC5629;
+
+  /* Slate palette - dark mode grays */
+  --color-slate-900: #0F172A;
+  --color-slate-800: #1E293B;
+  --color-slate-700: #334155;
+
+  /* ===== TYPOGRAPHY ===== */
+
+  /* Font families */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* ===== SPACING ===== */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* ===== BORDER RADIUS ===== */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ===== SHADOWS ===== */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Glow shadows for dark mode */
+  --shadow-glow-accent: 0 0 20px rgba(0, 212, 170, 0.3);
+  --shadow-glow-solar: 0 0 20px rgba(255, 107, 53, 0.3);
+  --shadow-glow-primary: 0 0 20px rgba(59, 130, 246, 0.3);
+
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* ===== Z-INDEX SCALE ===== */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+}
+
+/* ===== SEMANTIC COLOR ALIASES ===== */
+:root {
+  /* Background colors */
+  --bg-dark: var(--color-navy-900);
+  --bg-dark-elevated: var(--color-navy-800);
+  --bg-dark-surface: var(--color-navy-700);
+
+  /* Text colors for dark backgrounds */
+  --text-on-dark: #FFFFFF;
+  --text-on-dark-muted: rgba(255, 255, 255, 0.7);
+  --text-on-dark-subtle: rgba(255, 255, 255, 0.5);
+
+  /* Interactive colors */
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-light);
+  --interactive-warning: var(--color-solar);
+  --interactive-warning-hover: var(--color-solar-light);
+}
