@@ -66,7 +66,7 @@ const About = () => {
       name: 'Tom Erickson',
       title: 'Founder & CEO',
       brief: "Leading DSD's vision for democratized deep space infrastructure",
-      linkedin: 'https://www.linkedin.com/in/taboraerickson/',
+      linkedin: 'https://www.linkedin.com/in/iamtomerickson/',
     },
     {
       image: '/images/team/shraddha.png',
