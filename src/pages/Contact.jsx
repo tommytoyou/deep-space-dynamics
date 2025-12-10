@@ -296,7 +296,9 @@ const Contact = () => {
                   <LinkedInIcon />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/DeepSpaceUSA"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-navy-800 flex items-center justify-center text-slate-400 hover:text-accent hover:bg-navy-700 transition-all duration-300"
                   aria-label="Twitter / X"
                 >

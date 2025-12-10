@@ -90,7 +90,6 @@ const StatCard = ({ value, label, valueColor = 'text-white' }) => (
 
 const Stats = () => {
   const stats = [
-    { value: '$264,500', label: 'Per spacecraft unit cost', valueColor: 'text-accent' },
     { value: '10×', label: 'Cost reduction vs traditional', valueColor: 'text-white' },
     { value: '8', label: 'Initial constellation spacecraft', valueColor: 'text-white' },
     { value: '2027', label: 'First launch window', valueColor: 'text-solar' },
@@ -119,7 +118,7 @@ const Stats = () => {
           </div>
 
           {/* Right Column - Stats Grid */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-3 gap-6">
             {stats.map((stat, index) => (
               <StatCard key={index} {...stat} />
             ))}

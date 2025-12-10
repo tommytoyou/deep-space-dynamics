@@ -100,7 +100,9 @@ const Footer = () => {
                 <LinkedInIcon />
               </a>
               <a
-                href="#"
+                href="https://x.com/DeepSpaceUSA"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-navy-800 flex items-center justify-center text-slate-400 hover:text-accent hover:bg-navy-700 transition-all duration-300"
                 aria-label="Twitter / X"
               >
