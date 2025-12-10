@@ -52,27 +52,27 @@ const ConstellationDiagram = () => (
 
     {/* Earth L4 (leading) */}
     <circle cx="260" cy="96" r="8" fill="#00D4AA" />
-    <text x="275" y="85" fill="#00D4AA" fontSize="8" fontFamily="Inter">E-L4</text>
+    <text x="275" y="85" fill="#00D4AA" fontSize="8" fontFamily="Inter">ES-L4</text>
 
     {/* Earth L5 (trailing) */}
     <circle cx="260" cy="304" r="8" fill="#00D4AA" />
-    <text x="275" y="318" fill="#00D4AA" fontSize="8" fontFamily="Inter">E-L5</text>
+    <text x="275" y="318" fill="#00D4AA" fontSize="8" fontFamily="Inter">ES-L5</text>
 
     {/* Venus L4 */}
     <circle cx="165" cy="140" r="8" fill="#00D4AA" />
-    <text x="150" y="130" fill="#00D4AA" fontSize="8" fontFamily="Inter">V-L4</text>
+    <text x="150" y="130" fill="#00D4AA" fontSize="8" fontFamily="Inter">VS-L4</text>
 
     {/* Venus L5 */}
     <circle cx="165" cy="260" r="8" fill="#00D4AA" />
-    <text x="150" y="275" fill="#00D4AA" fontSize="8" fontFamily="Inter">V-L5</text>
+    <text x="150" y="275" fill="#00D4AA" fontSize="8" fontFamily="Inter">VS-L5</text>
 
     {/* Mars L4 */}
     <circle cx="115" cy="60" r="8" fill="#00D4AA" />
-    <text x="100" y="50" fill="#00D4AA" fontSize="8" fontFamily="Inter">M-L4</text>
+    <text x="100" y="50" fill="#00D4AA" fontSize="8" fontFamily="Inter">MS-L4</text>
 
     {/* Mars L5 */}
     <circle cx="285" cy="60" r="8" fill="#00D4AA" />
-    <text x="300" y="50" fill="#00D4AA" fontSize="8" fontFamily="Inter">M-L5</text>
+    <text x="300" y="50" fill="#00D4AA" fontSize="8" fontFamily="Inter">MS-L5</text>
 
     {/* Moon orbit around Earth (centered at Earth's position 320, 200) */}
     <circle cx="320" cy="200" r="25" stroke="#475569" strokeWidth="1" fill="none" strokeDasharray="2 2" />
@@ -84,12 +84,12 @@ const ConstellationDiagram = () => (
     {/* Earth-Moon L4 (60° ahead of Moon on lunar orbit) */}
     {/* Moon at 0°, L4 at 60° ahead: x = 320 + 25*cos(-60°), y = 200 + 25*sin(-60°) */}
     <circle cx="332.5" cy="178.3" r="8" fill="#00D4AA" />
-    <text x="345" y="172" fill="#00D4AA" fontSize="8" fontFamily="Inter">EM-L4</text>
+    <text x="345" y="172" fill="#00D4AA" fontSize="8" fontFamily="Inter">EL-L4</text>
 
     {/* Earth-Moon L5 (60° behind Moon on lunar orbit) */}
     {/* Moon at 0°, L5 at 60° behind: x = 320 + 25*cos(60°), y = 200 + 25*sin(60°) */}
     <circle cx="332.5" cy="221.7" r="8" fill="#00D4AA" />
-    <text x="345" y="232" fill="#00D4AA" fontSize="8" fontFamily="Inter">EM-L5</text>
+    <text x="345" y="232" fill="#00D4AA" fontSize="8" fontFamily="Inter">EL-L5</text>
 
     {/* Legend */}
     <rect x="10" y="360" width="12" height="12" rx="6" fill="#00D4AA" />
