@@ -37,28 +37,44 @@ const Navbar = () => {
   const location = useLocation();
   const { isDark, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
-  const [mobileProductsExpanded, setMobileProductsExpanded] = useState(false);
-  const dropdownRef = useRef(null);
-  const dropdownTimeoutRef = useRef(null);
+  const [solutionsDropdownOpen, setSolutionsDropdownOpen] = useState(false);
+  const [developersDropdownOpen, setDevelopersDropdownOpen] = useState(false);
+  const [mobileSolutionsExpanded, setMobileSolutionsExpanded] = useState(false);
+  const [mobileDevelopersExpanded, setMobileDevelopersExpanded] = useState(false);
+  const solutionsDropdownRef = useRef(null);
+  const developersDropdownRef = useRef(null);
+  const solutionsTimeoutRef = useRef(null);
+  const developersTimeoutRef = useRef(null);
 
-  const mainNavLinks = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/contact', label: 'Contact' },
-  ];
-
+  // Solutions dropdown - Products column
   const productLinks = [
     { to: '/products#tswi-ai', label: 'TSWI-AI Platform' },
     { to: '/products#constellation', label: 'Neuman Constellation' },
     { to: '/products#api', label: 'Data API' },
   ];
 
-  // Close dropdown when clicking outside
+  // Solutions dropdown - By Sector column
+  const sectorLinks = [
+    { to: '/solutions/government', label: 'Government' },
+    { to: '/solutions/commercial', label: 'Commercial Operators' },
+    { to: '/solutions/cislunar', label: 'Cislunar Economy' },
+  ];
+
+  // Developers dropdown
+  const developerLinks = [
+    { to: '/developers#api-docs', label: 'API Documentation' },
+    { to: '/developers#guides', label: 'Integration Guides' },
+    { to: '/contact', label: 'Support' },
+  ];
+
+  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setProductsDropdownOpen(false);
+      if (solutionsDropdownRef.current && !solutionsDropdownRef.current.contains(event.target)) {
+        setSolutionsDropdownOpen(false);
+      }
+      if (developersDropdownRef.current && !developersDropdownRef.current.contains(event.target)) {
+        setDevelopersDropdownOpen(false);
       }
     };
 
@@ -69,23 +85,40 @@ const Navbar = () => {
   // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
-    setMobileProductsExpanded(false);
+    setMobileSolutionsExpanded(false);
+    setMobileDevelopersExpanded(false);
   }, [location.pathname]);
 
-  const handleDropdownEnter = () => {
-    if (dropdownTimeoutRef.current) {
-      clearTimeout(dropdownTimeoutRef.current);
+  const handleSolutionsEnter = () => {
+    if (solutionsTimeoutRef.current) {
+      clearTimeout(solutionsTimeoutRef.current);
     }
-    setProductsDropdownOpen(true);
+    setSolutionsDropdownOpen(true);
+    setDevelopersDropdownOpen(false);
   };
 
-  const handleDropdownLeave = () => {
-    dropdownTimeoutRef.current = setTimeout(() => {
-      setProductsDropdownOpen(false);
+  const handleSolutionsLeave = () => {
+    solutionsTimeoutRef.current = setTimeout(() => {
+      setSolutionsDropdownOpen(false);
     }, 150);
   };
 
-  const isProductsActive = location.pathname === '/products' || location.pathname.startsWith('/products');
+  const handleDevelopersEnter = () => {
+    if (developersTimeoutRef.current) {
+      clearTimeout(developersTimeoutRef.current);
+    }
+    setDevelopersDropdownOpen(true);
+    setSolutionsDropdownOpen(false);
+  };
+
+  const handleDevelopersLeave = () => {
+    developersTimeoutRef.current = setTimeout(() => {
+      setDevelopersDropdownOpen(false);
+    }, 150);
+  };
+
+  const isSolutionsActive = location.pathname === '/products' || location.pathname.startsWith('/products') || location.pathname.startsWith('/solutions');
+  const isDevelopersActive = location.pathname.startsWith('/developers');
 
   return (
     <nav className="sticky top-0 z-50 glass-morphism-navy border-b border-white/10">
@@ -115,40 +148,104 @@ const Navbar = () => {
               Home
             </Link>
 
-            {/* Products Dropdown */}
+            {/* Solutions Dropdown (Multi-column) */}
             <div
-              ref={dropdownRef}
+              ref={solutionsDropdownRef}
               className="relative"
-              onMouseEnter={handleDropdownEnter}
-              onMouseLeave={handleDropdownLeave}
+              onMouseEnter={handleSolutionsEnter}
+              onMouseLeave={handleSolutionsLeave}
             >
               <button
                 className={`flex items-center gap-1 text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 ${
-                  isProductsActive
+                  isSolutionsActive
                     ? 'text-accent bg-white/5'
                     : 'text-white/80 hover:text-white hover:bg-white/5'
                 }`}
-                onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
+                onClick={() => setSolutionsDropdownOpen(!solutionsDropdownOpen)}
               >
-                Products
+                Solutions
                 <ChevronDownIcon
-                  className={`transition-transform duration-300 ${productsDropdownOpen ? 'rotate-180' : ''}`}
+                  className={`transition-transform duration-300 ${solutionsDropdownOpen ? 'rotate-180' : ''}`}
                 />
               </button>
 
-              {/* Dropdown Menu */}
+              {/* Solutions Dropdown Menu - Multi-column */}
               <div
-                className={`absolute top-full left-0 mt-2 w-56 py-2 glass-morphism-navy rounded-lg border border-white/10 shadow-xl transition-all duration-300 ${
-                  productsDropdownOpen
+                className={`absolute top-full left-0 mt-2 py-4 px-2 glass-morphism-navy rounded-lg border border-white/10 shadow-xl transition-all duration-300 ${
+                  solutionsDropdownOpen
                     ? 'opacity-100 visible translate-y-0'
                     : 'opacity-0 invisible -translate-y-2'
                 }`}
               >
-                {productLinks.map((link) => (
+                <div className="grid grid-cols-2 gap-4 min-w-[400px]">
+                  {/* Products Column */}
+                  <div>
+                    <h4 className="text-accent text-xs font-semibold uppercase tracking-wider px-4 pb-2 mb-2 border-b border-white/10">
+                      Products
+                    </h4>
+                    {productLinks.map((link) => (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        className="block px-4 py-2 text-sm text-white/80 hover:text-white border-l-2 border-transparent hover:border-accent transition-all duration-300"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                  {/* By Sector Column */}
+                  <div>
+                    <h4 className="text-accent text-xs font-semibold uppercase tracking-wider px-4 pb-2 mb-2 border-b border-white/10">
+                      By Sector
+                    </h4>
+                    {sectorLinks.map((link) => (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        className="block px-4 py-2 text-sm text-white/80 hover:text-white border-l-2 border-transparent hover:border-accent transition-all duration-300"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Developers Dropdown */}
+            <div
+              ref={developersDropdownRef}
+              className="relative"
+              onMouseEnter={handleDevelopersEnter}
+              onMouseLeave={handleDevelopersLeave}
+            >
+              <button
+                className={`flex items-center gap-1 text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 ${
+                  isDevelopersActive
+                    ? 'text-accent bg-white/5'
+                    : 'text-white/80 hover:text-white hover:bg-white/5'
+                }`}
+                onClick={() => setDevelopersDropdownOpen(!developersDropdownOpen)}
+              >
+                Developers
+                <ChevronDownIcon
+                  className={`transition-transform duration-300 ${developersDropdownOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+
+              {/* Developers Dropdown Menu */}
+              <div
+                className={`absolute top-full left-0 mt-2 w-56 py-2 glass-morphism-navy rounded-lg border border-white/10 shadow-xl transition-all duration-300 ${
+                  developersDropdownOpen
+                    ? 'opacity-100 visible translate-y-0'
+                    : 'opacity-0 invisible -translate-y-2'
+                }`}
+              >
+                {developerLinks.map((link) => (
                   <Link
                     key={link.to}
                     to={link.to}
-                    className="block px-4 py-3 text-sm text-white/80 hover:text-white hover:bg-white/5 border-l-2 border-transparent hover:border-accent transition-all duration-300"
+                    className="block px-4 py-3 text-sm text-white/80 hover:text-white border-l-2 border-transparent hover:border-accent transition-all duration-300"
                   >
                     {link.label}
                   </Link>
@@ -166,6 +263,18 @@ const Navbar = () => {
               }`}
             >
               About
+            </Link>
+
+            {/* Resources Link */}
+            <Link
+              to="/resources"
+              className={`text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 ${
+                location.pathname === '/resources'
+                  ? 'text-accent bg-white/5'
+                  : 'text-white/80 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              Resources
             </Link>
 
             {/* Contact Link */}
@@ -259,30 +368,83 @@ const Navbar = () => {
                 Home
               </Link>
 
-              {/* Products (Expandable) */}
+              {/* Solutions (Expandable Accordion) */}
               <div>
                 <button
-                  onClick={() => setMobileProductsExpanded(!mobileProductsExpanded)}
+                  onClick={() => setMobileSolutionsExpanded(!mobileSolutionsExpanded)}
                   className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    isProductsActive
+                    isSolutionsActive
                       ? 'text-accent bg-white/5'
                       : 'text-white/80 hover:text-white hover:bg-white/5'
                   }`}
                 >
-                  Products
+                  Solutions
                   <ChevronDownIcon
-                    className={`transition-transform duration-300 ${mobileProductsExpanded ? 'rotate-180' : ''}`}
+                    className={`transition-transform duration-300 ${mobileSolutionsExpanded ? 'rotate-180' : ''}`}
                   />
                 </button>
 
-                {/* Products Submenu */}
+                {/* Solutions Submenu */}
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
-                    mobileProductsExpanded ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                    mobileSolutionsExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
                   <div className="pl-4 py-2 space-y-1">
+                    {/* Products Section */}
+                    <h4 className="text-accent text-xs font-semibold uppercase tracking-wider px-4 pt-2 pb-1">
+                      Products
+                    </h4>
                     {productLinks.map((link) => (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        className="block px-4 py-2 text-sm text-white/70 hover:text-white border-l-2 border-transparent hover:border-accent transition-all duration-300"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                    {/* By Sector Section */}
+                    <h4 className="text-accent text-xs font-semibold uppercase tracking-wider px-4 pt-3 pb-1">
+                      By Sector
+                    </h4>
+                    {sectorLinks.map((link) => (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        className="block px-4 py-2 text-sm text-white/70 hover:text-white border-l-2 border-transparent hover:border-accent transition-all duration-300"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Developers (Expandable Accordion) */}
+              <div>
+                <button
+                  onClick={() => setMobileDevelopersExpanded(!mobileDevelopersExpanded)}
+                  className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
+                    isDevelopersActive
+                      ? 'text-accent bg-white/5'
+                      : 'text-white/80 hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  Developers
+                  <ChevronDownIcon
+                    className={`transition-transform duration-300 ${mobileDevelopersExpanded ? 'rotate-180' : ''}`}
+                  />
+                </button>
+
+                {/* Developers Submenu */}
+                <div
+                  className={`overflow-hidden transition-all duration-300 ${
+                    mobileDevelopersExpanded ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="pl-4 py-2 space-y-1">
+                    {developerLinks.map((link) => (
                       <Link
                         key={link.to}
                         to={link.to}
@@ -305,6 +467,18 @@ const Navbar = () => {
                 }`}
               >
                 About
+              </Link>
+
+              {/* Resources */}
+              <Link
+                to="/resources"
+                className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
+                  location.pathname === '/resources'
+                    ? 'text-accent bg-white/5'
+                    : 'text-white/80 hover:text-white hover:bg-white/5'
+                }`}
+              >
+                Resources
               </Link>
 
               {/* Contact */}

@@ -8,6 +8,11 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Government from './pages/solutions/Government';
+import Commercial from './pages/solutions/Commercial';
+import Cislunar from './pages/solutions/Cislunar';
+import Developers from './pages/Developers';
+import Resources from './pages/Resources';
 
 function App() {
   return (
@@ -21,6 +26,11 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
               <Route path="/product" element={<Navigate to="/products" replace />} />
+              <Route path="/solutions/government" element={<Government />} />
+              <Route path="/solutions/commercial" element={<Commercial />} />
+              <Route path="/solutions/cislunar" element={<Cislunar />} />
+              <Route path="/developers" element={<Developers />} />
+              <Route path="/resources" element={<Resources />} />
               <Route path="/about" element={<About />} />
               {/* Legacy routes redirect to About */}
               <Route path="/team" element={<Navigate to="/about" replace />} />

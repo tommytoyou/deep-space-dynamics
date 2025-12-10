@@ -17,16 +17,23 @@ const TwitterIcon = () => (
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const productLinks = [
-    { to: '/products#tswi-ai', label: 'TSWI-AI Platform' },
-    { to: '/products#constellation', label: 'Neuman Constellation' },
-    { to: '/products#api', label: 'Data API' },
+  const solutionsLinks = [
+    { to: '/solutions/government', label: 'Government' },
+    { to: '/solutions/commercial', label: 'Commercial' },
+    { to: '/solutions/cislunar', label: 'Cislunar' },
   ];
 
-  const companyLinks = [
+  const developersLinks = [
+    { to: '/developers#api-docs', label: 'API Documentation' },
+    { to: '/developers#guides', label: 'Integration Guides' },
+    { to: '/contact', label: 'Support' },
+  ];
+
+  const resourcesLinks = [
+    { to: '/resources', label: 'Blog' },
+    { to: '/resources', label: 'Whitepapers' },
     { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },
-    { to: '/contact', label: 'Careers', badge: "We're hiring" },
   ];
 
   return (
@@ -35,7 +42,7 @@ const Footer = () => {
         {/* Top Section - 4 Column Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Column 1 - Company Info */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <Link to="/" className="font-bold text-white text-lg hover:text-accent transition-colors">
               Deep Space Dynamics
             </Link>
@@ -45,51 +52,8 @@ const Footer = () => {
             <p className="text-slate-500 text-sm mt-1">
               Sheridan, Wyoming
             </p>
-          </div>
-
-          {/* Column 2 - Products */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Products</h4>
-            <ul className="space-y-2">
-              {productLinks.map((link) => (
-                <li key={link.to}>
-                  <Link
-                    to={link.to}
-                    className="text-slate-400 hover:text-accent text-sm transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3 - Company */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Company</h4>
-            <ul className="space-y-2">
-              {companyLinks.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    to={link.to}
-                    className="text-slate-400 hover:text-accent text-sm transition-colors inline-flex items-center gap-2"
-                  >
-                    {link.label}
-                    {link.badge && (
-                      <span className="text-xs bg-accent/20 text-accent px-1.5 py-0.5 rounded">
-                        {link.badge}
-                      </span>
-                    )}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4 - Connect */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Connect</h4>
-            <div className="flex gap-3 mb-4">
+            {/* Social Links */}
+            <div className="flex gap-3 mt-4">
               <a
                 href="https://www.linkedin.com/company/deep-space-dynamics/"
                 target="_blank"
@@ -109,12 +73,57 @@ const Footer = () => {
                 <TwitterIcon />
               </a>
             </div>
-            <a
-              href="mailto:contact@deepspacedynamics.us"
-              className="text-slate-400 hover:text-accent text-sm transition-colors"
-            >
-              contact@deepspacedynamics.us
-            </a>
+          </div>
+
+          {/* Column 2 - Solutions */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Solutions</h4>
+            <ul className="space-y-2">
+              {solutionsLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
+                    className="text-slate-400 hover:text-accent text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3 - Developers */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Developers</h4>
+            <ul className="space-y-2">
+              {developersLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
+                    className="text-slate-400 hover:text-accent text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4 - Resources */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Resources</h4>
+            <ul className="space-y-2">
+              {resourcesLinks.map((link, index) => (
+                <li key={`${link.label}-${index}`}>
+                  <Link
+                    to={link.to}
+                    className="text-slate-400 hover:text-accent text-sm transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
