@@ -66,21 +66,21 @@ const About = () => {
       name: 'Tom Erickson',
       title: 'Founder & CEO',
       brief: "Leading DSD's vision for democratized deep space infrastructure",
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/taboraerickson/',
     },
     {
       image: '/images/team/shraddha.png',
       name: 'Dr. Shraddha Barawkar',
       title: 'Chief Robotics Officer',
       brief: 'PhD in Robotics, NASA fellowship. Architecting autonomous spacecraft systems.',
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/shraddha-barawkar/',
     },
     {
       image: '/images/team/michael.jpeg',
       name: 'Michael G',
       title: 'Chief Information Security Officer',
       brief: 'Cybersecurity leadership experience at Amazon and major healthcare systems.',
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/michael-garner-cissp-a4310320/',
     },
   ];
 
