@@ -16,9 +16,11 @@ const ShieldIcon = () => (
 );
 
 // Agency Card Component
-const AgencyCard = ({ name, description, icon }) => (
+const AgencyCard = ({ name, description, logo, logoAlt }) => (
   <div className="bg-navy-800 border border-white/10 rounded-xl p-6 hover:border-accent/50 transition-all duration-300">
-    <div className="text-3xl mb-4">{icon}</div>
+    <div className="flex justify-center mb-4">
+      <img src={logo} alt={logoAlt} className="h-16 w-auto" />
+    </div>
     <h3 className="text-xl font-semibold text-white mb-2">{name}</h3>
     <p className="text-slate-400">{description}</p>
   </div>
@@ -50,22 +52,26 @@ const Government = () => {
     {
       name: 'NASA',
       description: 'Artemis mission support, deep space monitoring',
-      icon: '🚀',
+      logo: '/images/partners/nasa.svg',
+      logoAlt: 'NASA',
     },
     {
       name: 'NOAA',
       description: 'Space weather forecasting, SWPC integration',
-      icon: '🌐',
+      logo: '/images/partners/noaa.png',
+      logoAlt: 'NOAA',
     },
     {
       name: 'Space Force',
       description: 'Space domain awareness, asset protection',
-      icon: '🛰️',
+      logo: '/images/partners/spaceforce.svg',
+      logoAlt: 'U.S. Space Force',
     },
     {
       name: 'AFRL',
       description: 'Research partnerships, technology validation',
-      icon: '🔬',
+      logo: '/images/partners/afrl.svg',
+      logoAlt: 'AFRL',
     },
   ];
 
@@ -114,7 +120,8 @@ const Government = () => {
                 key={agency.name}
                 name={agency.name}
                 description={agency.description}
-                icon={agency.icon}
+                logo={agency.logo}
+                logoAlt={agency.logoAlt}
               />
             ))}
           </div>
