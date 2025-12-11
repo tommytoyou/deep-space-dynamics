@@ -47,6 +47,23 @@ const LagrangeDiagram = () => (
       Earth
     </text>
 
+    {/* Moon orbit around Earth (dashed circle) */}
+    <circle cx="220" cy="100" r="18" stroke="#475569" strokeWidth="1" fill="none" strokeDasharray="2 2" />
+
+    {/* Moon (positioned on orbit at right side) */}
+    <circle cx="238" cy="100" r="2.5" fill="#9ca3af" />
+    <text x="250" y="103" fill="#94a3b8" fontSize="7" fontFamily="Inter">Luna</text>
+
+    {/* Earth-Moon L4 (60° ahead of Moon on lunar orbit) */}
+    {/* Moon at 0° (right), L4 at 60° ahead (counter-clockwise): x = 220 + 18*cos(-60°), y = 100 + 18*sin(-60°) */}
+    <circle cx="229" cy="84.4" r="4" fill="#00D4AA" />
+    <text x="240" y="80" fill="#00D4AA" fontSize="7" fontWeight="600" fontFamily="Inter">EL-L4</text>
+
+    {/* Earth-Moon L5 (60° behind Moon on lunar orbit) */}
+    {/* Moon at 0° (right), L5 at 60° behind (clockwise): x = 220 + 18*cos(60°), y = 100 + 18*sin(60°) */}
+    <circle cx="229" cy="115.6" r="4" fill="#00D4AA" />
+    <text x="240" y="122" fill="#00D4AA" fontSize="7" fontWeight="600" fontFamily="Inter">EL-L5</text>
+
     {/* L4 Point (leading) */}
     <circle cx="180" cy="50" r="16" fill="url(#lagrangeGlow)" />
     <circle cx="180" cy="50" r="5" fill="#00D4AA" />
