@@ -84,6 +84,30 @@ const About = () => {
     },
   ];
 
+  const advisors = [
+    {
+      image: '/images/team/dan.jpeg',
+      name: 'Dan Schwartz',
+      title: 'Advisor',
+      brief: 'MBA Loyola, CEO P Performance Executive Sales and Fundraising, DPIN Foundation COO. Advising on AI and distributed GPU computing.',
+      linkedin: 'https://www.linkedin.com/in/dan-schwartz-0b1b1b1/',
+    },
+    {
+      image: '/images/team/dheraj.jpeg',
+      name: 'Dheraj Ganjikunta',
+      title: 'Advisor',
+      brief: "Co-founder & Lead PM: Brown University's SBUDNIC Program, Ex-McKinsey. Advises on launch procedures and NASA/NOAA engagement.",
+      linkedin: 'https://www.linkedin.com/in/dheraj-ganjikunta/',
+    },
+    {
+      image: '/images/team/eric.jpeg',
+      name: 'Eric Henry',
+      title: 'Advisor',
+      brief: 'Former SecOps Deputy Director for US Government GSA, DoD SecOps expert, Head of Security Operations for Salesforce. Advises on security and blockchain.',
+      linkedin: 'https://www.linkedin.com/in/eric-henry-security/',
+    },
+  ];
+
   const partners = [
     { src: '/images/team/cyberintelsolutions.png', alt: 'CyberIntel Solutions' },
     { src: '/images/team/theradteam.jpeg', alt: 'The Rad Team' },
@@ -153,6 +177,23 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <TeamCard key={index} {...member} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2b - Advisory Board */}
+      <section className="py-24 bg-navy-800">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="font-display text-3xl font-bold text-white text-center">
+            Advisory Board
+          </h2>
+          <p className="text-slate-400 text-center mt-4 max-w-2xl mx-auto">
+            Industry veterans and domain experts helping steer our strategic direction and technical roadmap.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto">
+            {advisors.map((advisor, index) => (
+              <TeamCard key={index} {...advisor} />
             ))}
           </div>
         </div>
