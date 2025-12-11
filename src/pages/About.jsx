@@ -90,7 +90,7 @@ const About = () => {
       name: 'Dan Schwartz',
       title: 'Advisor',
       brief: 'MBA Loyola, CEO P Performance Executive Sales and Fundraising, DPIN Foundation COO. Advising on AI and distributed GPU computing.',
-      linkedin: 'https://www.linkedin.com/in/dan-schwartz-0b1b1b1/',
+      linkedin: 'https://www.linkedin.com/in/danielbschwartz/',
     },
     {
       image: '/images/team/dheraj.jpeg',
@@ -104,7 +104,7 @@ const About = () => {
       name: 'Eric Henry',
       title: 'Advisor',
       brief: 'Former SecOps Deputy Director for US Government GSA, DoD SecOps expert, Head of Security Operations for Salesforce. Advises on security and blockchain.',
-      linkedin: 'https://www.linkedin.com/in/eric-henry-security/',
+      linkedin: 'https://www.linkedin.com/in/ejh-sec/',
     },
   ];
 
