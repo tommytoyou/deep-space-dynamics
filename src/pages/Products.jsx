@@ -197,10 +197,12 @@ const Products = () => {
               </a>
             </div>
 
-            {/* Right - Dashboard Mockup */}
-            <div className="rounded-xl bg-navy-700 border border-white/10 aspect-video flex items-center justify-center">
-              <p className="text-slate-500">TSWI-AI Dashboard Preview</p>
-            </div>
+            {/* Right - Dashboard Screenshot */}
+            <img
+              src="/images/tswi-dashboard.png"
+              alt="TSWI-AI Dashboard"
+              className="max-w-full rounded-xl border border-white/10 shadow-2xl"
+            />
           </div>
         </div>
       </section>
