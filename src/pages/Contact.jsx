@@ -33,12 +33,6 @@ const SpinnerIcon = () => (
   </svg>
 );
 
-const CalendarIcon = () => (
-  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-  </svg>
-);
-
 const ChevronDownIcon = () => (
   <svg className="w-5 h-5 absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -263,25 +257,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Schedule a Call */}
-            <div>
-              <h3 className="text-xl font-semibold text-white">Schedule a Call</h3>
-              <p className="text-slate-400 mt-2">
-                Book a 30-minute introductory call with our team
-              </p>
-              {/* TODO: Integrate Calendly embed */}
-              <button
-                onClick={() => {
-                  // TODO: Open Calendly modal or redirect
-                  console.log('Open Calendly');
-                }}
-                className="mt-4 flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-lg hover:bg-white/10 transition-all duration-300"
-              >
-                <CalendarIcon />
-                Open Calendar
-              </button>
-            </div>
-
             {/* Connect */}
             <div>
               <h3 className="text-xl font-semibold text-white">Connect</h3>
@@ -311,10 +286,10 @@ const Contact = () => {
             <div className="bg-navy-800/50 rounded-lg p-4 border border-white/10">
               <p className="font-semibold text-white">Media Inquiries</p>
               <a
-                href="mailto:press@deepspacedynamics.us"
+                href="mailto:contact@deepspacedynamics.us"
                 className="text-slate-400 text-sm hover:text-accent transition-colors"
               >
-                press@deepspacedynamics.us
+                contact@deepspacedynamics.us
               </a>
             </div>
           </div>
