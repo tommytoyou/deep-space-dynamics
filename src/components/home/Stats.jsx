@@ -61,18 +61,6 @@ const LagrangeDiagram = () => (
       L5
     </text>
 
-    {/* L1 Point (between Sun and Earth) */}
-    <circle cx="170" cy="100" r="3" fill="#00D4AA" opacity="0.6" />
-    <text x="170" y="88" textAnchor="middle" fill="#00D4AA" fontSize="8" opacity="0.6" fontFamily="Inter">
-      L1
-    </text>
-
-    {/* L2 Point (beyond Earth) */}
-    <circle cx="245" cy="100" r="3" fill="#00D4AA" opacity="0.6" />
-    <text x="245" y="88" textAnchor="middle" fill="#00D4AA" fontSize="8" opacity="0.6" fontFamily="Inter">
-      L2
-    </text>
-
     {/* Connection lines to L4/L5 */}
     <line x1="80" y1="100" x2="180" y2="50" stroke="#00D4AA" strokeWidth="1" strokeDasharray="2 3" opacity="0.3" />
     <line x1="220" y1="100" x2="180" y2="50" stroke="#00D4AA" strokeWidth="1" strokeDasharray="2 3" opacity="0.3" />
