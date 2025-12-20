@@ -149,6 +149,9 @@ const Resources = () => {
       description: 'Policy framework for space as critical infrastructure under PPD-21',
       href: '/docs/WhitePaper_CriticalInfrastructure.pdf',
     },
+  ];
+
+  const caseStudies = [
     {
       title: 'Neuman-B 6U SpaceDrone',
       description: '100% American aerospace manufacturing executive summary',
@@ -232,10 +235,16 @@ const Resources = () => {
 
           {/* Case Studies */}
           {showCaseStudies && (
-            <EmptyState
-              title="Case studies coming soon"
-              subtitle="Be the first to know when we publish customer success stories."
-            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {caseStudies.map((study) => (
+                <WhitepaperCard
+                  key={study.title}
+                  title={study.title}
+                  description={study.description}
+                  href={study.href}
+                />
+              ))}
+            </div>
           )}
         </div>
       </section>
