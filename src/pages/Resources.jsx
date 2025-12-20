@@ -45,27 +45,34 @@ const TabButton = ({ active, onClick, children }) => (
 );
 
 // Blog Card Component
-const BlogCard = ({ category, categoryVariant, title, excerpt, meta }) => (
-  <article className="bg-navy-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-accent/30 transform hover:scale-[1.02] transition-all duration-300 group">
-    {/* Image Placeholder */}
-    <div className="aspect-video bg-navy-700 relative">
-      <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent" />
-    </div>
+const BlogCard = ({ category, categoryVariant, title, excerpt, meta, link }) => (
+  <a
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <article className="bg-navy-800/50 rounded-xl overflow-hidden border border-white/10 hover:border-accent/30 transform hover:scale-[1.02] transition-all duration-300 group h-full">
+      {/* Image Placeholder */}
+      <div className="aspect-video bg-navy-700 relative">
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent" />
+      </div>
 
-    {/* Content */}
-    <div className="p-6">
-      <CategoryBadge variant={categoryVariant}>{category}</CategoryBadge>
-      <h3 className="text-lg font-semibold text-white mt-3 mb-2 group-hover:text-accent transition-colors duration-300">
-        {title}
-      </h3>
-      <p className="text-slate-400 text-sm leading-relaxed mb-4">
-        {excerpt}
-      </p>
-      <p className="text-slate-500 text-xs">
-        {meta}
-      </p>
-    </div>
-  </article>
+      {/* Content */}
+      <div className="p-6">
+        <CategoryBadge variant={categoryVariant}>{category}</CategoryBadge>
+        <h3 className="text-lg font-semibold text-white mt-3 mb-2 group-hover:text-accent transition-colors duration-300">
+          {title}
+        </h3>
+        <p className="text-slate-400 text-sm leading-relaxed mb-4">
+          {excerpt}
+        </p>
+        <p className="text-slate-500 text-xs">
+          {meta}
+        </p>
+      </div>
+    </article>
+  </a>
 );
 
 // Whitepaper Card Component
@@ -121,25 +128,28 @@ const Resources = () => {
 
   const blogPosts = [
     {
-      category: 'Space Weather',
-      categoryVariant: 'accent',
-      title: 'Understanding Coronal Mass Ejections: Why Early Warning Matters',
-      excerpt: 'CMEs can travel at speeds up to 3,000 km/s. Learn why detection at Lagrange points provides critical hours of advance warning.',
-      meta: 'Coming Soon · 8 min read',
-    },
-    {
-      category: 'Technology',
-      categoryVariant: 'solar',
-      title: 'Why Lagrange Points: The Strategic Advantage of Gravitational Stability',
-      excerpt: "Traditional space weather monitoring relies on single-point observation. Here's why multi-point Lagrange coverage changes everything.",
-      meta: 'Coming Soon · 6 min read',
-    },
-    {
-      category: 'Industry',
+      category: 'Policy',
       categoryVariant: 'purple',
-      title: 'The $10B Problem: Space Weather Risk to Global Infrastructure',
-      excerpt: 'From satellite operators to power grids, space weather poses significant risks. We break down the economic impact.',
-      meta: 'Coming Soon · 10 min read',
+      title: 'Economic Strength and the Rule of Law',
+      excerpt: 'History shows that the strength of great powers rests on the link between economics and military reach. If humanity is to expand into space, the foundation of law must be laid alongside exploration.',
+      meta: 'September 24, 2025 · 4 min read',
+      link: 'https://www.linkedin.com/pulse/economic-strength-rule-law-tom-erickson--aplke/',
+    },
+    {
+      category: 'Infrastructure',
+      categoryVariant: 'accent',
+      title: 'The Case for Distributed Space Infrastructure — Before It\'s Too Late',
+      excerpt: 'We are flying blind, and the stakes could not be higher. In the glare of the Sun, thousands of asteroids are entirely invisible to Earth-based telescopes. Distributed space-based infrastructure is the answer.',
+      meta: 'August 1, 2025 · 6 min read',
+      link: 'https://www.linkedin.com/pulse/case-distributed-space-infrastructure-before-its-too-late-erickson--wthbe/',
+    },
+    {
+      category: 'Mars',
+      categoryVariant: 'solar',
+      title: 'Three Ways Neumans Will Benefit a Mars Colony',
+      excerpt: 'As humanity prepares to establish a permanent presence on Mars, Deep Space Dynamics\' Neuman-class Spacecraft offers an essential foundation for early-stage colonization.',
+      meta: 'May 4, 2025 · 5 min read',
+      link: 'https://www.linkedin.com/pulse/three-ways-neumans-benefit-mars-colony-tom-erickson-jys4e/',
     },
   ];
 
@@ -208,6 +218,7 @@ const Resources = () => {
                     title={post.title}
                     excerpt={post.excerpt}
                     meta={post.meta}
+                    link={post.link}
                   />
                 ))}
               </div>
