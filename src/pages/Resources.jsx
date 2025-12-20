@@ -69,7 +69,7 @@ const BlogCard = ({ category, categoryVariant, title, excerpt, meta }) => (
 );
 
 // Whitepaper Card Component
-const WhitepaperCard = ({ title, description }) => (
+const WhitepaperCard = ({ title, description, href }) => (
   <div className="bg-navy-800/50 rounded-xl p-6 border border-white/10 flex items-start gap-6">
     <div className="flex-shrink-0">
       <PDFIcon />
@@ -77,12 +77,23 @@ const WhitepaperCard = ({ title, description }) => (
     <div className="flex-1">
       <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
       <p className="text-slate-400 text-sm mb-4">{description}</p>
-      <button
-        disabled
-        className="px-4 py-2 rounded-lg text-sm font-medium bg-slate-700 text-slate-500 cursor-not-allowed"
-      >
-        Coming Soon
-      </button>
+      {href ? (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 rounded-lg text-sm font-medium bg-accent text-navy-900 hover:bg-accent/90 transition-colors"
+        >
+          Download PDF
+        </a>
+      ) : (
+        <button
+          disabled
+          className="px-4 py-2 rounded-lg text-sm font-medium bg-slate-700 text-slate-500 cursor-not-allowed"
+        >
+          Coming Soon
+        </button>
+      )}
     </div>
   </div>
 );
@@ -134,12 +145,14 @@ const Resources = () => {
 
   const whitepapers = [
     {
-      title: 'Initial-8 Mission Architecture',
-      description: 'Technical overview of our Lagrange point constellation',
+      title: 'Securing America\'s Space Industrial Base',
+      description: 'Policy framework for space as critical infrastructure under PPD-21',
+      href: '/docs/WhitePaper_CriticalInfrastructure.pdf',
     },
     {
-      title: 'TSWI-AI Technical Overview',
-      description: 'AI/ML approach to space weather prediction',
+      title: 'Neuman-B 6U SpaceDrone',
+      description: '100% American aerospace manufacturing executive summary',
+      href: '/docs/NeumanB_CaseStudy.pdf',
     },
   ];
 
@@ -210,6 +223,7 @@ const Resources = () => {
                     key={paper.title}
                     title={paper.title}
                     description={paper.description}
+                    href={paper.href}
                   />
                 ))}
               </div>
