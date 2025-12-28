@@ -26,7 +26,7 @@ const Team = () => {
             <h2 className="text-3xl font-bold text-white mb-3">Leadership Team</h2>
           </div>
           
-         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* CEO */}
             <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
               <div className="relative mb-6">
@@ -76,21 +76,6 @@ const Team = () => {
               </p>
             </div>
 */}
-            {/* CTO - New Addition */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
-              <div className="relative mb-6">
-                <img 
-                  src="/images/team/shraddha.png" 
-                  alt="Shraddha Barawka" 
-                  className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-blue-600 shadow-lg" 
-                />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Shraddha Barawka</h3>
-              <p className="text-blue-600 font-semibold mb-4">Co-founder & CTO</p>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                AI and robotics leader specializing in swarm robotics, autonomous systems, and adaptive control. Ph.D. in Mechanical Engineering from University of Cincinnati.
-              </p>
-            </div>
           </div>
         </div>
 

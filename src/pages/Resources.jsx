@@ -171,7 +171,7 @@ const Resources = () => {
 
   const showBlogPosts = activeTab === 'all' || activeTab === 'blog';
   const showWhitepapers = activeTab === 'all' || activeTab === 'whitepapers';
-  const showCaseStudies = activeTab === 'case-studies';
+  const showCaseStudies = activeTab === 'all' || activeTab === 'case-studies';
 
   return (
     <div className="min-h-screen bg-navy-900 pt-24">
@@ -246,15 +246,20 @@ const Resources = () => {
 
           {/* Case Studies */}
           {showCaseStudies && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {caseStudies.map((study) => (
-                <WhitepaperCard
-                  key={study.title}
-                  title={study.title}
-                  description={study.description}
-                  href={study.href}
-                />
-              ))}
+            <div className="mb-16">
+              {activeTab === 'all' && (
+                <h2 className="font-display text-2xl font-bold text-white mb-8">Case Studies</h2>
+              )}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {caseStudies.map((study) => (
+                  <WhitepaperCard
+                    key={study.title}
+                    title={study.title}
+                    description={study.description}
+                    href={study.href}
+                  />
+                ))}
+              </div>
             </div>
           )}
         </div>
