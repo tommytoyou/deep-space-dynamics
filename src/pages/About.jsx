@@ -52,7 +52,7 @@ const PartnerLogo = ({ src, alt }) => (
   <img
     src={src}
     alt={alt}
-    className="h-12 opacity-70 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-300"
+    className="w-32 h-32 object-contain opacity-70 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-300"
     onError={(e) => {
       e.target.style.display = 'none';
     }}
