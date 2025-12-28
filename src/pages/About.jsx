@@ -167,7 +167,7 @@ const About = () => {
           <h2 className="font-display text-3xl font-bold text-white text-center">
             Leadership
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-2xl mx-auto justify-items-center">
             {teamMembers.map((member, index) => (
               <TeamCard key={index} {...member} />
             ))}
