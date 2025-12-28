@@ -69,13 +69,6 @@ const About = () => {
       linkedin: 'https://www.linkedin.com/in/iamtomerickson/',
     },
     {
-      image: '/images/team/shraddha.png',
-      name: 'Dr. Shraddha Barawkar',
-      title: 'Chief Robotics Officer',
-      brief: 'PhD in Robotics, NASA fellowship. Architecting autonomous spacecraft systems.',
-      linkedin: 'https://www.linkedin.com/in/shraddha-barawkar/',
-    },
-    {
       image: '/images/team/michael.jpeg',
       name: 'Michael G',
       title: 'Chief Information Security Officer',
